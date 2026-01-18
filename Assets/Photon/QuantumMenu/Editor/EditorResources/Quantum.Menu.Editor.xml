@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Quantum.Menu.Editor</name>
+    </assembly>
+    <members>
+        <member name="T:Quantum.Menu.Editor.QuantumMenuUIControllerEditor">
+            <summary>
+            The custom editor searches and displays all <see cref="T:Quantum.QuantumMenuSceneInfo"/> assets in the project."/>
+            </summary>
+        </member>
+        <member name="M:Quantum.Menu.Editor.QuantumMenuUIControllerEditor.OnInspectorGUI">
+            <summary>
+            Adding scene info asset selection foldout.
+            </summary>
+        </member>
+        <member name="T:Quantum.Editor.QuantumMenuUIScreenEditor">
+            <summary>
+            Debug QuantumMenuUIScreen content.
+            </summary>
+        </member>
+        <member name="M:Quantum.Editor.QuantumMenuUIScreenEditor.OnInspectorGUI">
+            <inheritdoc/>
+        </member>
+        <member name="T:Quantum.Editor.QuantumMenuMachineIdImporter">
+            <summary>
+            All asset ending with .id will be tried for a <see cref="T:Quantum.Menu.QuantumMenuMachineId"/> script.
+            A local id is created for it that will never go into version control.
+            </summary>
+        </member>
+        <member name="M:Quantum.Editor.QuantumMenuMachineIdImporter.OnImportAsset(UnityEditor.AssetImporters.AssetImportContext)">
+            <inheritdoc/>
+        </member>
+    </members>
+</doc>
