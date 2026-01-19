@@ -133,6 +133,7 @@ PlayerSettings:
   switchNVNMaxPublicSamplerIDCount: 0
   switchMaxWorkerMultiple: 8
   switchNVNGraphicsFirmwareMemory: 32
+  switchGraphicsJobsSyncAfterKick: 1
   vulkanNumSwapchainBuffers: 3
   vulkanEnableSetSRGBWrite: 0
   vulkanEnablePreTransform: 1
@@ -531,6 +532,9 @@ PlayerSettings:
   - m_BuildTarget: AndroidPlayer
     m_APIs: 150000000b000000
     m_Automatic: 0
+  - m_BuildTarget: WindowsStandaloneSupport
+    m_APIs: 0200000012000000
+    m_Automatic: 0
   m_BuildTargetVRSettings: []
   m_DefaultShaderChunkSizeInMB: 16
   m_DefaultShaderChunkCount: 0
@@ -815,31 +819,32 @@ PlayerSettings:
   webGLMemoryLinearGrowthStep: 16
   webGLMemoryGeometricGrowthStep: 0.2
   webGLMemoryGeometricGrowthCap: 96
-  webGLEnableWebGPU: 0
   webGLPowerPreference: 2
   webGLWebAssemblyTable: 0
   webGLWebAssemblyBigInt: 0
   webGLCloseOnQuit: 0
   webWasm2023: 0
+  webEnableSubmoduleStrippingCompatibility: 0
   scriptingDefineSymbols:
-    Android: 
-    EmbeddedLinux: 
-    GameCoreScarlett: 
-    GameCoreXboxOne: 
-    Kepler: 
-    LinuxHeadlessSimulation: 
-    Nintendo Switch: 
+    Android: QUANTUM_LOGLEVEL_INFO
+    EmbeddedLinux: QUANTUM_LOGLEVEL_INFO
+    GameCoreScarlett: QUANTUM_LOGLEVEL_INFO
+    GameCoreXboxOne: QUANTUM_LOGLEVEL_INFO
+    Kepler: QUANTUM_LOGLEVEL_INFO
+    LinuxHeadlessSimulation: QUANTUM_LOGLEVEL_INFO
+    Nintendo Switch: QUANTUM_LOGLEVEL_INFO
     Nintendo Switch 2: 
-    PS4: 
-    PS5: 
-    QNX: 
-    Standalone: 
-    VisionOS: 
-    WebGL: 
-    Windows Store Apps: 
-    XboxOne: 
-    iPhone: 
-    tvOS: 
+    PS4: QUANTUM_LOGLEVEL_INFO
+    PS5: QUANTUM_LOGLEVEL_INFO
+    QNX: QUANTUM_LOGLEVEL_INFO
+    ReservedCFE: QUANTUM_LOGLEVEL_INFO
+    Standalone: QUANTUM_LOGLEVEL_INFO
+    VisionOS: QUANTUM_LOGLEVEL_INFO
+    WebGL: QUANTUM_LOGLEVEL_INFO
+    Windows Store Apps: QUANTUM_LOGLEVEL_INFO
+    XboxOne: QUANTUM_LOGLEVEL_INFO
+    iPhone: QUANTUM_LOGLEVEL_INFO
+    tvOS: QUANTUM_LOGLEVEL_INFO
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
@@ -951,3 +956,4 @@ PlayerSettings:
   insecureHttpOption: 0
   androidVulkanDenyFilterList: []
   androidVulkanAllowFilterList: []
+  androidVulkanDeviceFilterListAsset: {fileID: 0}
