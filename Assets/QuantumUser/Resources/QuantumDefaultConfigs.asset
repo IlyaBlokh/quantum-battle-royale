@@ -278,8 +278,8 @@ MonoBehaviour:
     StartDisabled: 0
     Children: []
   - SystemType:
-      AssemblyQualifiedName: Quantum.FirstSystem, Quantum.Simulation, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
+      AssemblyQualifiedName: Quantum.QuantumUser.Simulation.Systems.MoveCharacterSystem,
+        Quantum.Simulation, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     SystemName: 
     StartDisabled: 0
     Children: []
