@@ -24,8 +24,12 @@ namespace Quantum {
       }
 #endif
 
-      Quantum.Input i = new Quantum.Input();
-      callback.SetInput(i, DeterministicInputFlags.Repeatable);
+      var input = new Input {
+        Direction = new FPVector2(
+          UnityEngine.Input.GetAxis("Horizontal").ToFP(),
+          UnityEngine.Input.GetAxis("Vertical").ToFP())
+      };
+      callback.SetInput(input, DeterministicInputFlags.Repeatable);
     }
   }
 }

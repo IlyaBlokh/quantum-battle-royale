@@ -1,3 +1,4 @@
+using Photon.Deterministic;
 using UnityEngine.Scripting;
 
 namespace Quantum.QuantumUser.Simulation.Systems
@@ -7,19 +8,26 @@ namespace Quantum.QuantumUser.Simulation.Systems
     {
         public override void Update(Frame frame, ref Filter filter)
         {
-            filter.CharacterController->Move(frame, filter.Entity, default);
+            Input* input = frame.GetPlayerInput(filter.PlayerLink->PlayerRef);
+            FPVector2 direction = input->Direction;
+            if (direction.Magnitude > 1) 
+                direction = direction.Normalized;
+
+            filter.CharacterController->Move(frame, filter.Entity, direction.XOY);
         }
 
         public struct Filter
         {
             public EntityRef Entity;
             public CharacterController3D* CharacterController;
+            public PlayerLink* PlayerLink;
         }
 
         public void OnPlayerAdded(Frame f, PlayerRef player, bool firstTime)
         {
             RuntimePlayer playerData = f.GetPlayerData(player);
-            f.Create(playerData.PlayerAvatar);
+            EntityRef playerEntity = f.Create(playerData.PlayerAvatar);
+            f.Add(playerEntity, new PlayerLink { PlayerRef = player });
         }
     }
 }

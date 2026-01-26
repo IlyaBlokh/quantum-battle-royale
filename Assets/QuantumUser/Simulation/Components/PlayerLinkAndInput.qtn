@@ -1,0 +1,7 @@
+component PlayerLink {
+    PlayerRef PlayerRef;
+}
+
+input {
+  FPVector2 Direction;
+}
