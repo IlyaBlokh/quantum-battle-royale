@@ -13,13 +13,14 @@ namespace Quantum.QuantumUser.Simulation.Systems
             if (direction.Magnitude > 1) 
                 direction = direction.Normalized;
 
-            filter.CharacterController->Move(frame, filter.Entity, direction.XOY);
+            KCCSettings kccSettings = frame.FindAsset(filter.KCC->Settings);
+            kccSettings.Move(frame, filter.Entity, direction);
         }
 
         public struct Filter
         {
             public EntityRef Entity;
-            public CharacterController3D* CharacterController;
+            public KCC* KCC;
             public PlayerLink* PlayerLink;
         }
 
@@ -28,6 +29,11 @@ namespace Quantum.QuantumUser.Simulation.Systems
             RuntimePlayer playerData = f.GetPlayerData(player);
             EntityRef playerEntity = f.Create(playerData.PlayerAvatar);
             f.Add(playerEntity, new PlayerLink { PlayerRef = player });
+
+            KCC* kcc = f.Unsafe.GetPointer<KCC>(playerEntity);
+            KCCSettings kccSettings = f.FindAsset(kcc->Settings);
+            kcc->Acceleration = kccSettings.Acceleration;
+            kcc->MaxSpeed = kccSettings.BaseSpeed;
         }
     }
 }
