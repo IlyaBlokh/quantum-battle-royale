@@ -144,6 +144,7 @@ GameObject:
   - component: {fileID: 3211895474656671852}
   - component: {fileID: 3674785788233704184}
   - component: {fileID: 5183902348156486074}
+  - component: {fileID: 2063234840526581440}
   m_Layer: 6
   m_Name: Character_Base
   m_TagString: Untagged
@@ -468,6 +469,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f7541eb7e5b4ee09f3862605b6ec9df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::QuantumUser.View.FollowLocalPlayer
+--- !u!114 &2063234840526581440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326267824891306075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a73afbd891e4d843b2842aee22d4d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: QuantumUser.View::PlayerView
+  animator: {fileID: 534198499139429989}
 --- !u!1 &1739315570316238824
 GameObject:
   m_ObjectHideFlags: 0

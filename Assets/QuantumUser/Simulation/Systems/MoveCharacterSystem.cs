@@ -6,6 +6,13 @@ namespace Quantum.QuantumUser.Simulation.Systems
     [Preserve]
     public unsafe class MoveCharacterSystem : SystemMainThreadFilter<MoveCharacterSystem.Filter>, ISignalOnPlayerAdded
     {
+        public struct Filter
+        {
+            public EntityRef Entity;
+            public KCC* KCC;
+            public PlayerLink* PlayerLink;
+        }
+
         public override void Update(Frame frame, ref Filter filter)
         {
             Input* input = frame.GetPlayerInput(filter.PlayerLink->PlayerRef);
@@ -15,13 +22,6 @@ namespace Quantum.QuantumUser.Simulation.Systems
 
             KCCSettings kccSettings = frame.FindAsset(filter.KCC->Settings);
             kccSettings.Move(frame, filter.Entity, direction);
-        }
-
-        public struct Filter
-        {
-            public EntityRef Entity;
-            public KCC* KCC;
-            public PlayerLink* PlayerLink;
         }
 
         public void OnPlayerAdded(Frame f, PlayerRef player, bool firstTime)
