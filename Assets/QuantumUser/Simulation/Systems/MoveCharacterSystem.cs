@@ -4,7 +4,7 @@ using UnityEngine.Scripting;
 namespace Quantum.QuantumUser.Simulation.Systems
 {
     [Preserve]
-    public unsafe class MoveCharacterSystem : SystemMainThreadFilter<MoveCharacterSystem.Filter>, ISignalOnPlayerAdded
+    public unsafe class MoveCharacterSystem : SystemMainThreadFilter<MoveCharacterSystem.Filter>
     {
         public struct Filter
         {
@@ -22,18 +22,6 @@ namespace Quantum.QuantumUser.Simulation.Systems
 
             KCCSettings kccSettings = frame.FindAsset(filter.KCC->Settings);
             kccSettings.Move(frame, filter.Entity, direction);
-        }
-
-        public void OnPlayerAdded(Frame f, PlayerRef player, bool firstTime)
-        {
-            RuntimePlayer playerData = f.GetPlayerData(player);
-            EntityRef playerEntity = f.Create(playerData.PlayerAvatar);
-            f.Add(playerEntity, new PlayerLink { PlayerRef = player });
-
-            KCC* kcc = f.Unsafe.GetPointer<KCC>(playerEntity);
-            KCCSettings kccSettings = f.FindAsset(kcc->Settings);
-            kcc->Acceleration = kccSettings.Acceleration;
-            kcc->MaxSpeed = kccSettings.BaseSpeed;
         }
     }
 }

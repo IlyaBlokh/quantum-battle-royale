@@ -161,6 +161,7 @@ namespace Quantum {
 
       // copy runtime config
       var serializer = new QuantumUnityJsonSerializer();
+      RuntimeConfig.Seed = Guid.NewGuid().GetHashCode();
       var runtimeConfig = serializer.CloneConfig(RuntimeConfig);
 
       // always randomize the Quantum simulation seed when UseRandomSeed is enabled and the simulation is started from frame 0
