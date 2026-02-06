@@ -122,7 +122,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  EnableMppm: 1
+  EnableMppm: 0
 --- !u!1001 &1145511813976286754
 PrefabInstance:
   m_ObjectHideFlags: 0
