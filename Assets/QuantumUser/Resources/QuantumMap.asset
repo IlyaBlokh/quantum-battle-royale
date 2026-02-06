@@ -54,7 +54,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 1
     CircleRadius:
       RawValue: 65536
@@ -76,7 +76,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -97,7 +97,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 1
     CircleRadius:
       RawValue: 65536
@@ -119,7 +119,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -140,7 +140,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 1
     CircleRadius:
       RawValue: 65536
@@ -162,7 +162,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -183,7 +183,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 1
     CircleRadius:
       RawValue: 65536
@@ -205,7 +205,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -226,7 +226,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 1
     CircleRadius:
       RawValue: 65536
@@ -248,7 +248,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -269,7 +269,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 1
     CircleRadius:
       RawValue: 65536
@@ -291,7 +291,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -312,7 +312,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 1
     CircleRadius:
       RawValue: 65536
@@ -334,7 +334,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -355,7 +355,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 1
     CircleRadius:
       RawValue: 65536
@@ -377,7 +377,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -398,7 +398,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 1
     CircleRadius:
       RawValue: 65535
@@ -420,7 +420,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -441,7 +441,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 1
     CircleRadius:
       RawValue: 65536
@@ -463,7 +463,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -484,7 +484,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 1
     CircleRadius:
       RawValue: 65536
@@ -506,7 +506,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -527,7 +527,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 1
     CircleRadius:
       RawValue: 65536
@@ -549,7 +549,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -570,7 +570,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 1
     CircleRadius:
       RawValue: 65536
@@ -592,7 +592,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -613,7 +613,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 1
     CircleRadius:
       RawValue: 65536
@@ -635,7 +635,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -656,7 +656,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 1
     CircleRadius:
       RawValue: 65536
@@ -678,7 +678,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -699,7 +699,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 1
     CircleRadius:
       RawValue: 65536
@@ -721,7 +721,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -742,7 +742,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 1
     CircleRadius:
       RawValue: 65536
@@ -764,7 +764,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -785,7 +785,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 1
     CircleRadius:
       RawValue: 65536
@@ -807,7 +807,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -828,7 +828,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 1
     CircleRadius:
       RawValue: 65536
@@ -850,7 +850,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -871,7 +871,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 1
     CircleRadius:
       RawValue: 65536
@@ -893,7 +893,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -914,7 +914,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -936,7 +936,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -957,7 +957,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -979,7 +979,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -1000,7 +1000,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -1022,7 +1022,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -1043,7 +1043,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -1065,7 +1065,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -1086,7 +1086,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -1108,7 +1108,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -1129,7 +1129,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -1151,7 +1151,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -1172,7 +1172,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -1194,7 +1194,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -1215,7 +1215,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -1237,7 +1237,7 @@ MonoBehaviour:
     StaticData:
       Name: QuadStaticCollider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -1258,7 +1258,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -1280,7 +1280,7 @@ MonoBehaviour:
     StaticData:
       Name: QuadStaticCollider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -1301,7 +1301,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -1323,7 +1323,7 @@ MonoBehaviour:
     StaticData:
       Name: QuadStaticCollider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -1344,7 +1344,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -1366,7 +1366,7 @@ MonoBehaviour:
     StaticData:
       Name: QuadStaticCollider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -1387,7 +1387,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -1409,7 +1409,7 @@ MonoBehaviour:
     StaticData:
       Name: QuadStaticCollider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -1430,7 +1430,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -1452,7 +1452,7 @@ MonoBehaviour:
     StaticData:
       Name: QuadStaticCollider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -1473,7 +1473,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -1495,7 +1495,7 @@ MonoBehaviour:
     StaticData:
       Name: QuadStaticCollider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -1516,7 +1516,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -1538,7 +1538,7 @@ MonoBehaviour:
     StaticData:
       Name: QuadStaticCollider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -1559,7 +1559,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -1581,7 +1581,7 @@ MonoBehaviour:
     StaticData:
       Name: QuadStaticCollider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -1602,7 +1602,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -1624,7 +1624,7 @@ MonoBehaviour:
     StaticData:
       Name: QuadStaticCollider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -1645,7 +1645,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -1667,7 +1667,7 @@ MonoBehaviour:
     StaticData:
       Name: QuadStaticCollider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -1688,7 +1688,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -1710,7 +1710,7 @@ MonoBehaviour:
     StaticData:
       Name: QuadStaticCollider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -1731,7 +1731,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -1753,7 +1753,7 @@ MonoBehaviour:
     StaticData:
       Name: QuadStaticCollider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -1774,7 +1774,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -1796,7 +1796,7 @@ MonoBehaviour:
     StaticData:
       Name: QuadStaticCollider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -1817,7 +1817,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -1839,7 +1839,7 @@ MonoBehaviour:
     StaticData:
       Name: QuadStaticCollider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -1850,9 +1850,9 @@ MonoBehaviour:
       RawValue: -77213
     Position:
       X:
-        RawValue: 5662101
+        RawValue: 5681408
       Y:
-        RawValue: -3032159
+        RawValue: -3078783
     Height:
       RawValue: 0
     VerticalOffset:
@@ -1860,15 +1860,15 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
     BoxExtents:
       X:
-        RawValue: 294912
+        RawValue: 589824
       Y:
-        RawValue: 163840
+        RawValue: 327680
     CapsuleSize:
       X:
         RawValue: 0
@@ -1882,7 +1882,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -1893,25 +1893,25 @@ MonoBehaviour:
       RawValue: -26133
     Position:
       X:
-        RawValue: 1300551
+        RawValue: 1346428
       Y:
-        RawValue: 5459557
+        RawValue: 5440933
     Height:
       RawValue: 0
     VerticalOffset:
-      RawValue: -9746
+      RawValue: -19493
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
     BoxExtents:
       X:
-        RawValue: 294912
+        RawValue: 589824
       Y:
-        RawValue: 163840
+        RawValue: 327680
     CapsuleSize:
       X:
         RawValue: 0
@@ -1925,7 +1925,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -1946,7 +1946,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -1968,7 +1968,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -1989,7 +1989,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -2011,7 +2011,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -2032,15 +2032,15 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
     BoxExtents:
       X:
-        RawValue: 58983
+        RawValue: 117965
       Y:
-        RawValue: 163840
+        RawValue: 327680
     CapsuleSize:
       X:
         RawValue: 0
@@ -2054,7 +2054,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -2065,7 +2065,7 @@ MonoBehaviour:
       RawValue: 0
     Position:
       X:
-        RawValue: 3510108
+        RawValue: 3624140
       Y:
         RawValue: -7098527
     Height:
@@ -2075,15 +2075,15 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
     BoxExtents:
       X:
-        RawValue: 58983
+        RawValue: 117965
       Y:
-        RawValue: 163840
+        RawValue: 327680
     CapsuleSize:
       X:
         RawValue: 0
@@ -2097,7 +2097,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -2108,9 +2108,9 @@ MonoBehaviour:
       RawValue: -374296
     Position:
       X:
-        RawValue: -3545998
+        RawValue: -3565151
       Y:
-        RawValue: -6961062
+        RawValue: -6931304
     Height:
       RawValue: 0
     VerticalOffset:
@@ -2118,15 +2118,15 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
     BoxExtents:
       X:
-        RawValue: 98304
+        RawValue: 294912
       Y:
-        RawValue: 131072
+        RawValue: 393216
     CapsuleSize:
       X:
         RawValue: 0
@@ -2140,7 +2140,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -2161,15 +2161,15 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
     BoxExtents:
       X:
-        RawValue: 229376
+        RawValue: 458752
       Y:
-        RawValue: 98304
+        RawValue: 196608
     CapsuleSize:
       X:
         RawValue: 0
@@ -2183,7 +2183,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -2204,15 +2204,15 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
     BoxExtents:
       X:
-        RawValue: 229376
+        RawValue: 458752
       Y:
-        RawValue: 98304
+        RawValue: 196608
     CapsuleSize:
       X:
         RawValue: 0
@@ -2226,7 +2226,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -2247,15 +2247,15 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
     BoxExtents:
       X:
-        RawValue: 229376
+        RawValue: 458752
       Y:
-        RawValue: 98304
+        RawValue: 196608
     CapsuleSize:
       X:
         RawValue: 0
@@ -2269,7 +2269,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -2290,15 +2290,15 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
     BoxExtents:
       X:
-        RawValue: 229376
+        RawValue: 458752
       Y:
-        RawValue: 98304
+        RawValue: 196608
     CapsuleSize:
       X:
         RawValue: 0
@@ -2312,7 +2312,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -2333,7 +2333,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -2355,7 +2355,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -2376,7 +2376,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -2398,7 +2398,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -2419,7 +2419,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -2441,7 +2441,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -2462,7 +2462,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -2484,7 +2484,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -2505,7 +2505,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -2527,7 +2527,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -2548,7 +2548,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -2570,7 +2570,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -2591,7 +2591,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -2613,7 +2613,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -2634,7 +2634,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -2656,7 +2656,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -2677,7 +2677,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -2699,7 +2699,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -2720,7 +2720,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -2742,7 +2742,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -2763,7 +2763,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -2785,7 +2785,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -2806,7 +2806,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -2828,7 +2828,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -2849,7 +2849,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -2871,7 +2871,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -2892,7 +2892,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -2914,7 +2914,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -2935,7 +2935,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -2957,7 +2957,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -2978,7 +2978,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -3000,7 +3000,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -3021,7 +3021,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -3043,7 +3043,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -3064,7 +3064,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -3086,7 +3086,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -3107,7 +3107,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -3129,7 +3129,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -3150,7 +3150,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -3172,7 +3172,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -3193,7 +3193,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -3215,7 +3215,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -3236,7 +3236,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -3258,7 +3258,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -3279,7 +3279,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -3301,7 +3301,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -3322,7 +3322,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -3344,7 +3344,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -3365,7 +3365,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -3387,7 +3387,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -3408,7 +3408,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -3430,7 +3430,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -3451,7 +3451,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -3473,7 +3473,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -3494,7 +3494,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -3516,7 +3516,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -3537,7 +3537,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -3559,7 +3559,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -3580,7 +3580,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -3602,7 +3602,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -3623,7 +3623,7 @@ MonoBehaviour:
     PhysicsMaterial:
       Id:
         Value: 0
-    Layer: 0
+    Layer: 8
     ShapeType: 4
     CircleRadius:
       RawValue: 0
@@ -3645,7 +3645,7 @@ MonoBehaviour:
     StaticData:
       Name: Collider
       Tag: Untagged
-      Layer: 0
+      Layer: 8
       Asset:
         Id:
           Value: 0
@@ -3737,9 +3737,9 @@ MonoBehaviour:
       data:
         Position:
           X:
-            RawValue: -655360
+            RawValue: 5734400
           Y:
-            RawValue: -655360
+            RawValue: 4567859
         Rotation:
           RawValue: 0
     - rid: 1736013160281800705
@@ -3766,9 +3766,9 @@ MonoBehaviour:
       data:
         Position:
           X:
-            RawValue: 655360
+            RawValue: -6212813
           Y:
-            RawValue: 655360
+            RawValue: -308019
         Rotation:
           RawValue: 0
     - rid: 2579325184930480129
@@ -3780,9 +3780,9 @@ MonoBehaviour:
       data:
         Position:
           X:
-            RawValue: 0
+            RawValue: -347340
           Y:
-            RawValue: -655360
+            RawValue: 6645350
         Rotation:
           RawValue: 0
     - rid: 3396021123299672065
@@ -3794,9 +3794,9 @@ MonoBehaviour:
       data:
         Position:
           X:
-            RawValue: 655360
+            RawValue: 6599475
           Y:
-            RawValue: -655360
+            RawValue: 838860
         Rotation:
           RawValue: 0
     - rid: 4257743722831151105
@@ -3808,9 +3808,9 @@ MonoBehaviour:
       data:
         Position:
           X:
-            RawValue: -655360
+            RawValue: -5904793
           Y:
-            RawValue: 655360
+            RawValue: -3768320
         Rotation:
           RawValue: 0
     - rid: 4803153704125464577
@@ -3822,9 +3822,9 @@ MonoBehaviour:
       data:
         Position:
           X:
-            RawValue: 0
+            RawValue: -5898240
           Y:
-            RawValue: 655360
+            RawValue: 4869325
         Rotation:
           RawValue: 0
     - rid: 6417156225883963393
@@ -3836,9 +3836,9 @@ MonoBehaviour:
       data:
         Position:
           X:
-            RawValue: 0
+            RawValue: -1461452
           Y:
-            RawValue: 0
+            RawValue: -6999245
         Rotation:
           RawValue: 0
     - rid: 6447710900253097985
@@ -3850,9 +3850,9 @@ MonoBehaviour:
       data:
         Position:
           X:
-            RawValue: -655360
+            RawValue: 7208960
           Y:
-            RawValue: 0
+            RawValue: -2503475
         Rotation:
           RawValue: 0
     - rid: 6915805714963234817
@@ -3864,9 +3864,9 @@ MonoBehaviour:
       data:
         Position:
           X:
-            RawValue: 655360
+            RawValue: 4508877
           Y:
-            RawValue: 0
+            RawValue: -6651904
         Rotation:
           RawValue: 0
     - rid: 7297631520213172225

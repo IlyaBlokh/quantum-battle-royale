@@ -188,7 +188,7 @@ MonoBehaviour:
     PositionOffset:
       RawValue: 0
   PhysicsCollider:
-    IsEnabled: 0
+    IsEnabled: 1
     IsTrigger: 0
     Material:
       Id:
@@ -199,12 +199,12 @@ MonoBehaviour:
       CapsuleDirection2D: 0
       CapsuleDirection3D: 0
     Shape2D:
-      ShapeType: 0
+      ShapeType: 1
       PolygonCollider:
         Id:
           Value: 0
       CircleRadius:
-        RawValue: 32768
+        RawValue: 65536
       CapsuleSize:
         X:
           RawValue: 65536
@@ -264,8 +264,8 @@ MonoBehaviour:
     CallbackFlags:
       Value: 0
   PhysicsBody:
-    IsEnabled: 0
-    Config2D: 116
+    IsEnabled: 1
+    Config2D: 1
     Config3D: 58
     RotationFreeze: 0
     InertiaMode: 0
