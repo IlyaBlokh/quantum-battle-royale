@@ -7,6 +7,7 @@ namespace Quantum {
   /// </summary>
   public class QuantumDebugInput : MonoBehaviour {
 
+    private Vector3 _mouseHitPosition;
     private void OnEnable() {
       QuantumCallback.Subscribe(this, (CallbackPollInput callback) => PollInput(callback));
     }
@@ -23,12 +24,19 @@ namespace Quantum {
         return;
       }
 #endif
-
+      
+      Ray ray = Camera.main.ScreenPointToRay(UnityEngine.Input.mousePosition);
+      if (Physics.Raycast(ray, out RaycastHit hit, maxDistance: 100, layerMask: 1 << UnityEngine.LayerMask.NameToLayer("Ground"))) 
+        _mouseHitPosition = hit.point;
+      
       var input = new Input {
         Direction = new FPVector2(
           UnityEngine.Input.GetAxis("Horizontal").ToFP(),
-          UnityEngine.Input.GetAxis("Vertical").ToFP())
+          UnityEngine.Input.GetAxis("Vertical").ToFP()),
+        
+        MousePosition = _mouseHitPosition.ToFPVector3().XZ
       };
+      
       callback.SetInput(input, DeterministicInputFlags.Repeatable);
     }
   }
