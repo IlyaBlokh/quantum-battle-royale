@@ -33,8 +33,8 @@ namespace Quantum {
         Direction = new FPVector2(
           UnityEngine.Input.GetAxis("Horizontal").ToFP(),
           UnityEngine.Input.GetAxis("Vertical").ToFP()),
-        
-        MousePosition = _mouseHitPosition.ToFPVector3().XZ
+        MousePosition = _mouseHitPosition.ToFPVector3().XZ,
+        Fire = UnityEngine.Input.GetMouseButton(0)
       };
       
       callback.SetInput(input, DeterministicInputFlags.Repeatable);
