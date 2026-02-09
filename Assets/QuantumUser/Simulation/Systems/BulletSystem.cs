@@ -29,6 +29,7 @@ namespace Quantum.QuantumUser.Simulation.Systems
             Bullet* bullet = f.Unsafe.GetPointer<Bullet>(bulletEntity);
             bullet->Speed = bulletData.Speed;
             bullet->Damage = bulletData.Damage;
+            bullet->HeightOffset = weaponData.Offset.Y;
             bullet->Owner = owner;
             bullet->Time = bulletData.Duration;
             bullet->Direction = ownerTransform.Up;

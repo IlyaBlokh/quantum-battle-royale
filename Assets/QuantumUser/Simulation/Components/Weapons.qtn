@@ -8,6 +8,7 @@ component Bullet{
     FP Damage;
     FP Time;
     FP Speed;
+    FP HeightOffset;
     FPVector2 Direction;
 }
 
