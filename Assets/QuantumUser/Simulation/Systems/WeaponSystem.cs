@@ -25,6 +25,7 @@ namespace Quantum.QuantumUser.Simulation.Systems
             {
                 var weaponData = frame.FindAsset(filter.Weapon->WeaponData);
                 filter.Weapon->CooldownTime = weaponData.Cooldown;
+                frame.Signals.CreateBullet(filter.Entity, weaponData);
             }
         }
     }

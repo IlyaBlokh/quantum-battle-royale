@@ -621,7 +621,7 @@ namespace Quantum {
   }
   [StructLayout(LayoutKind.Explicit)]
   public unsafe partial struct Bullet : Quantum.IComponent {
-    public const Int32 SIZE = 56;
+    public const Int32 SIZE = 48;
     public const Int32 ALIGNMENT = 8;
     [FieldOffset(0)]
     public EntityRef Owner;
@@ -632,7 +632,7 @@ namespace Quantum {
     [FieldOffset(16)]
     public FP Speed;
     [FieldOffset(32)]
-    public FPVector3 Direction;
+    public FPVector2 Direction;
     public override readonly Int32 GetHashCode() {
       unchecked { 
         var hash = 18307;
@@ -650,7 +650,7 @@ namespace Quantum {
         FP.Serialize(&p->Damage, serializer);
         FP.Serialize(&p->Speed, serializer);
         FP.Serialize(&p->Time, serializer);
-        FPVector3.Serialize(&p->Direction, serializer);
+        FPVector2.Serialize(&p->Direction, serializer);
     }
   }
   [StructLayout(LayoutKind.Explicit)]
@@ -795,9 +795,13 @@ namespace Quantum {
         FP.Serialize(&p->CooldownTime, serializer);
     }
   }
+  public unsafe partial interface ISignalCreateBullet : ISignal {
+    void CreateBullet(Frame f, EntityRef owner, WeaponData weaponData);
+  }
   public static unsafe partial class Constants {
   }
   public unsafe partial class Frame {
+    private ISignalCreateBullet[] _ISignalCreateBulletSystems;
     partial void AllocGen() {
       _globals = (_globals_*)Context.Allocator.AllocAndClear(sizeof(_globals_));
     }
@@ -809,6 +813,7 @@ namespace Quantum {
     }
     partial void InitGen() {
       Initialize(this, this.SimulationConfig.Entities, 256);
+      _ISignalCreateBulletSystems = BuildSignalsArray<ISignalCreateBullet>();
       _ComponentSignalsOnAdded = new ComponentReactiveCallbackInvoker[ComponentTypeId.Type.Length];
       _ComponentSignalsOnRemoved = new ComponentReactiveCallbackInvoker[ComponentTypeId.Type.Length];
       BuildSignalsArrayOnComponentAdded<Quantum.Bullet>();
@@ -883,6 +888,15 @@ namespace Quantum {
       Physics3D?.Init(_globals->PhysicsState3D.MapStaticCollidersState.TrackedMap);
     }
     public unsafe partial struct FrameSignals {
+      public void CreateBullet(EntityRef owner, WeaponData weaponData) {
+        var array = _f._ISignalCreateBulletSystems;
+        for (Int32 i = 0; i < array.Length; ++i) {
+          var s = array[i];
+          if (_f.SystemIsEnabledInHierarchy((SystemBase)s)) {
+            s.CreateBullet(_f, owner, weaponData);
+          }
+        }
+      }
     }
   }
   public unsafe partial class Statics {

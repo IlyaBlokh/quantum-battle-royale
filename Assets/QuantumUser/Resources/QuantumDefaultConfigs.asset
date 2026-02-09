@@ -295,6 +295,12 @@ MonoBehaviour:
     SystemName: 
     StartDisabled: 0
     Children: []
+  - SystemType:
+      AssemblyQualifiedName: Quantum.QuantumUser.Simulation.Systems.BulletSystem,
+        Quantum.Simulation, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    SystemName: 
+    StartDisabled: 0
+    Children: []
 --- !u!114 &3915631007138797865
 MonoBehaviour:
   m_ObjectHideFlags: 0

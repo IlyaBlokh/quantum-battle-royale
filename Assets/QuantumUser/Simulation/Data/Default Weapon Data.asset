@@ -24,5 +24,5 @@ MonoBehaviour:
     Y:
       RawValue: 0
     Z:
-      RawValue: 0
-  Bullet: {fileID: 0}
+      RawValue: 147456
+  Bullet: {fileID: 11400000, guid: 7b3e0fed46649d94b9951d429b9b81e0, type: 2}
