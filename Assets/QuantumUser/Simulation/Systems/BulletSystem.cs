@@ -19,8 +19,8 @@ namespace Quantum.QuantumUser.Simulation.Systems
             FPVector2 nextPosition = filter.Bullet->Direction * filter.Bullet->Speed * f.DeltaTime;
             if (CheckForCollisions(f, filter, nextPosition, out EntityRef entityHit))
             {
-                if (f.Unsafe.TryGetPointer(entityHit, out Damageable* damageable)) 
-                    f.Signals.DamageableHit(entityHit, filter.Bullet->Damage, damageable);
+                if (f.Unsafe.TryGetPointer(entityHit, out Damageable* damageable))
+                    f.Signals.DamageableHit(entityHit, filter.Bullet->Owner, filter.Bullet->Damage, damageable);
                 
                 f.Destroy(filter.Entity);
                 return;

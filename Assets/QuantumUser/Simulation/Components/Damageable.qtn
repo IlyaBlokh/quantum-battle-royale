@@ -1,6 +1,6 @@
 component Damageable{
     FP Health;
-    AssetRef<DamageableData> DamageableData;
+    AssetRef<DamageableBase> DamageableData;
 }
 
-signal DamageableHit(EntityRef damageableEntity, FP damage, Damageable* damageable);
+signal DamageableHit(EntityRef victim, EntityRef hitter, FP damage, Damageable* damageable);

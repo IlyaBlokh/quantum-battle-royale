@@ -72,6 +72,9 @@ namespace QuantumUser.View
 
     private void UpdateAnimator()
     {
+      if (!PredictedFrame.Exists(EntityRef))
+        return;
+      
       var kcc = PredictedFrame.Get<KCC>(EntityRef);
       var velocity = kcc.Velocity;
       animator.SetFloat(MoveX, velocity.X.AsFloat);
