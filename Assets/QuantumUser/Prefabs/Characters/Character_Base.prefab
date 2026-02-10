@@ -486,6 +486,7 @@ MonoBehaviour:
   animator: {fileID: 534198499139429989}
   overheadUI: {fileID: 1892350581194458970}
   nickname: {fileID: 1447206199820168171}
+  animationSpeedMultiplier: 1.5
 --- !u!114 &4124854408192713744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -582,6 +583,7 @@ GameObject:
   - component: {fileID: 4370682288682822821}
   - component: {fileID: 9085244594456279735}
   - component: {fileID: 7390473213232581521}
+  - component: {fileID: 455755717838987235}
   m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
@@ -685,6 +687,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94deadbf5a01c0a4b98197c39489322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: QuantumUser.View::LookAtCamera
+--- !u!114 &455755717838987235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892350581194458970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73653410390c451b911a4a27a1bd9233, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: QuantumUser.View::QuantumUser.View.DamageableView
+  healthBarFill: {fileID: 1497564469917106863}
+  animationDuration: 0.1
 --- !u!1 &4650006189429459219
 GameObject:
   m_ObjectHideFlags: 0

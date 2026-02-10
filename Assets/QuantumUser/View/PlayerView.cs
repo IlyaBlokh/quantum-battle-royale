@@ -1,6 +1,8 @@
+using Photon.Deterministic;
 using Quantum;
 using TMPro;
 using UnityEngine;
+using Input = Quantum.Input;
 
 namespace QuantumUser.View
 {
@@ -12,6 +14,7 @@ namespace QuantumUser.View
     [SerializeField] private Animator animator;
     [SerializeField] private GameObject overheadUI;
     [SerializeField] private TMP_Text nickname;
+    [SerializeField] [Range(1,2)] private float animationSpeedMultiplier = 1.5f;
 
     private bool _isLocalPlayer;
     private Renderer[] _renderers;
@@ -78,10 +81,13 @@ namespace QuantumUser.View
       if (!PredictedFrame.Exists(EntityRef))
         return;
       
-      var kcc = PredictedFrame.Get<KCC>(EntityRef);
-      var velocity = kcc.Velocity;
-      animator.SetFloat(MoveX, velocity.X.AsFloat);
-      animator.SetFloat(MoveZ, velocity.Y.AsFloat);
+      Input* input = PredictedFrame.GetPlayerInput(PredictedFrame.Get<PlayerLink>(EntityRef).PlayerRef);
+      
+      FP currentRotation = PredictedFrame.Get<Transform2D>(EntityRef).Rotation;
+      Vector2 rotatedDirection = FPVector2.Rotate(input->Direction, -currentRotation).ToUnityVector2() * animationSpeedMultiplier;
+      
+      animator.SetFloat(MoveX, rotatedDirection.x);
+      animator.SetFloat(MoveZ, rotatedDirection.y);
     }
   }
 } 

@@ -6,6 +6,6 @@ namespace Quantum
     {
         public FP MaxHealth;
         
-        public abstract void DamageableHit(Frame frame, EntityRef victim, EntityRef hitter, FP damage, Damageable* damageable);
+        public abstract void DamageableHit(Frame f, EntityRef victim, EntityRef hitter, FP damage, Damageable* damageable);
     }
 }
