@@ -581,6 +581,7 @@ GameObject:
   - component: {fileID: 5844126019847679880}
   - component: {fileID: 4370682288682822821}
   - component: {fileID: 9085244594456279735}
+  - component: {fileID: 7390473213232581521}
   m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
@@ -606,7 +607,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 3.247}
+  m_AnchoredPosition: {x: 0, y: 4}
   m_SizeDelta: {x: 2, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &5844126019847679880
@@ -672,6 +673,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &7390473213232581521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892350581194458970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94deadbf5a01c0a4b98197c39489322e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: QuantumUser.View::LookAtCamera
 --- !u!1 &4650006189429459219
 GameObject:
   m_ObjectHideFlags: 0
