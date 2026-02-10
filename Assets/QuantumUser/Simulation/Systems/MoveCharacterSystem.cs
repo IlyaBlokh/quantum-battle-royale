@@ -14,11 +14,11 @@ namespace Quantum.QuantumUser.Simulation.Systems
             public Transform2D* Transform;
         }
 
-        public override void Update(Frame frame, ref Filter filter)
+        public override void Update(Frame f, ref Filter filter)
         {
-            Input* input = frame.GetPlayerInput(filter.PlayerLink->PlayerRef);
+            Input* input = f.GetPlayerInput(filter.PlayerLink->PlayerRef);
             RotatePlayer(filter, input);
-            MovePlayer(frame, filter, input);
+            MovePlayer(f, filter, input);
         }
 
         private void RotatePlayer(Filter filter, Input* input)

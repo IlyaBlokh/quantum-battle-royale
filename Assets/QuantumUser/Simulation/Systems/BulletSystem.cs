@@ -14,16 +14,19 @@ namespace Quantum.QuantumUser.Simulation.Systems
             public Transform2D* Transform;
         }
 
-        public override void Update(Frame frame, ref Filter filter)
+        public override void Update(Frame f, ref Filter filter)
         {
-            FPVector2 nextPosition = filter.Bullet->Direction * filter.Bullet->Speed * frame.DeltaTime;
-            if (CheckForCollisions(frame, filter, nextPosition, out EntityRef entityHit))
+            FPVector2 nextPosition = filter.Bullet->Direction * filter.Bullet->Speed * f.DeltaTime;
+            if (CheckForCollisions(f, filter, nextPosition, out EntityRef entityHit))
             {
-                frame.Destroy(filter.Entity);
+                if (f.Unsafe.TryGetPointer(entityHit, out Damageable* damageable)) 
+                    f.Signals.DamageableHit(entityHit, filter.Bullet->Damage, damageable);
+                
+                f.Destroy(filter.Entity);
                 return;
             }
 
-            CheckBulletTimeExpiration(frame, filter);
+            CheckBulletTimeExpiration(f, filter);
             
             filter.Transform->Position += nextPosition;
         }

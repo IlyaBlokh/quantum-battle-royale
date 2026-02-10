@@ -12,20 +12,20 @@ namespace Quantum.QuantumUser.Simulation.Systems
             public Weapon* Weapon;
         }
 
-        public override void Update(Frame frame, ref Filter filter)
+        public override void Update(Frame f, ref Filter filter)
         {
             if (filter.Weapon->CooldownTime > 0)
             {
-                filter.Weapon->CooldownTime -= frame.DeltaTime;
+                filter.Weapon->CooldownTime -= f.DeltaTime;
                 return;
             }
             
-            var input = frame.GetPlayerInput(filter.Player->PlayerRef);
+            var input = f.GetPlayerInput(filter.Player->PlayerRef);
             if (input->Fire.WasPressed)
             {
-                var weaponData = frame.FindAsset(filter.Weapon->WeaponData);
+                var weaponData = f.FindAsset(filter.Weapon->WeaponData);
                 filter.Weapon->CooldownTime = weaponData.Cooldown;
-                frame.Signals.CreateBullet(filter.Entity, weaponData);
+                f.Signals.CreateBullet(filter.Entity, weaponData);
             }
         }
     }
