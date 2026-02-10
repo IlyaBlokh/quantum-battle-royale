@@ -11,10 +11,14 @@ namespace Quantum.QuantumUser.Simulation.Systems
             public EntityRef Entity;
             public Damageable* Damageable;
         }
-        
+
         public void OnAdded(Frame f, EntityRef entity, Damageable* component)
-        {   
+        {
             DamageableBase damageableBase = f.FindAsset(component->DamageableData);
+            
+            if (damageableBase == null)
+                return;
+            
             component->Health = damageableBase.MaxHealth;
         }
 

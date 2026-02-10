@@ -485,6 +485,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: QuantumUser.View::PlayerView
   animator: {fileID: 534198499139429989}
   overheadUI: {fileID: 1892350581194458970}
+  nickname: {fileID: 1447206199820168171}
 --- !u!114 &4124854408192713744
 MonoBehaviour:
   m_ObjectHideFlags: 0

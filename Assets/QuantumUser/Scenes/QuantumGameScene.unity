@@ -7427,7 +7427,7 @@ MonoBehaviour:
   - PlayerAvatar:
       Id:
         Value: 1266394172502929486
-    PlayerNickname: 
+    PlayerNickname: anakin
   MaxPlayerCount: 0
   SimulationSpeedMultiplier: 1
   DisplaySaveAndReloadButton: 0

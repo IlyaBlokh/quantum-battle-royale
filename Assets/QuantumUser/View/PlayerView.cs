@@ -1,4 +1,5 @@
 using Quantum;
+using TMPro;
 using UnityEngine;
 
 namespace QuantumUser.View
@@ -10,6 +11,7 @@ namespace QuantumUser.View
   
     [SerializeField] private Animator animator;
     [SerializeField] private GameObject overheadUI;
+    [SerializeField] private TMP_Text nickname;
 
     private bool _isLocalPlayer;
     private Renderer[] _renderers;
@@ -32,6 +34,7 @@ namespace QuantumUser.View
       }
     
       overheadUI.SetActive(true);
+      nickname.text = frame.GetPlayerData(playerRef).PlayerNickname;
     
       QuantumEvent.Subscribe<EventOnPlayerEnterGrass>(this, OnPlayerEnterGrass);
       QuantumEvent.Subscribe<EventOnPlayerExitGrass>(this, OnPlayerExitGrass);
