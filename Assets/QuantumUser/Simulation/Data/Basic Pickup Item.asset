@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fc27c21974c4254b0b9db8230f47110, type: 3}
+  m_Name: Basic Pickup Item
+  m_EditorClassIdentifier: Quantum.Simulation::Quantum.BasicPickupItem
+  Identifier:
+    Path: QuantumUser/Simulation/Data/Basic Pickup Item
+    Guid:
+      Value: 414223777374486875
+  PickupTime:
+    RawValue: 65536
