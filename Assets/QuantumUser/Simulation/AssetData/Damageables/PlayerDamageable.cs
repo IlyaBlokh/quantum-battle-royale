@@ -4,16 +4,16 @@ namespace Quantum
 {
   public class PlayerDamageable : DamageableBase
   {
-    public override unsafe void DamageableHit(Frame f, EntityRef victim, EntityRef hitter, FP damage, Damageable* damageable)
+    public override unsafe void DamageableHit(Frame f, EntityRef target, EntityRef hitter, FP damage, Damageable* damageable)
     {
       damageable->Health -= damage;
 
       if (damageable->Health <= 0)
       {
-        f.Destroy(victim);
+        f.Destroy(target);
         return;
       }
-      f.Events.OnDamageApplied(victim, MaxHealth, damageable->Health);
+      f.Events.OnHealthUpdate(target, MaxHealth, damageable->Health);
     }
   }
 }

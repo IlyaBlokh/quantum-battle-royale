@@ -61,15 +61,15 @@ namespace Quantum {
       }
       static partial void GetEventTypeCodeGen(Int32 eventID, ref System.Type result) {
         switch (eventID) {
-          case EventOnDamageApplied.ID: result = typeof(EventOnDamageApplied); return;
+          case EventOnHealthUpdate.ID: result = typeof(EventOnHealthUpdate); return;
           case EventOnPlayerEnterGrass.ID: result = typeof(EventOnPlayerEnterGrass); return;
           case EventOnPlayerExitGrass.ID: result = typeof(EventOnPlayerExitGrass); return;
           default: break;
         }
       }
-      public EventOnDamageApplied OnDamageApplied(EntityRef victim, FP maxHealth, FP currentHealth) {
-        var ev = _f.Context.AcquireEvent<EventOnDamageApplied>(EventOnDamageApplied.ID);
-        ev.victim = victim;
+      public EventOnHealthUpdate OnHealthUpdate(EntityRef target, FP maxHealth, FP currentHealth) {
+        var ev = _f.Context.AcquireEvent<EventOnHealthUpdate>(EventOnHealthUpdate.ID);
+        ev.target = target;
         ev.maxHealth = maxHealth;
         ev.currentHealth = currentHealth;
         _f.AddEvent(ev);
@@ -89,15 +89,15 @@ namespace Quantum {
       }
     }
   }
-  public unsafe partial class EventOnDamageApplied : EventBase {
+  public unsafe partial class EventOnHealthUpdate : EventBase {
     public new const Int32 ID = 1;
-    public EntityRef victim;
+    public EntityRef target;
     public FP maxHealth;
     public FP currentHealth;
-    protected EventOnDamageApplied(Int32 id, EventFlags flags) : 
+    protected EventOnHealthUpdate(Int32 id, EventFlags flags) : 
         base(id, flags) {
     }
-    public EventOnDamageApplied() : 
+    public EventOnHealthUpdate() : 
         base(1, EventFlags.Server|EventFlags.Client) {
     }
     public new QuantumGame Game {
@@ -111,7 +111,7 @@ namespace Quantum {
     public override Int32 GetHashCode() {
       unchecked {
         var hash = 41;
-        hash = hash * 31 + victim.GetHashCode();
+        hash = hash * 31 + target.GetHashCode();
         hash = hash * 31 + maxHealth.GetHashCode();
         hash = hash * 31 + currentHealth.GetHashCode();
         return hash;

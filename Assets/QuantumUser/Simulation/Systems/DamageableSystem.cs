@@ -4,7 +4,7 @@ using UnityEngine.Scripting;
 namespace Quantum.QuantumUser.Simulation.Systems
 {
     [Preserve]
-    public unsafe class DamageableSystem : SystemSignalsOnly, ISignalOnComponentAdded<Damageable>, ISignalDamageableHit
+    public unsafe class DamageableSystem : SystemSignalsOnly, ISignalOnComponentAdded<Damageable>, ISignalDamageableHit, ISignalDamageableHealthRestored
     {
         public struct Filter
         {
@@ -26,6 +26,13 @@ namespace Quantum.QuantumUser.Simulation.Systems
         {
             DamageableBase damageableBase = f.FindAsset(damageable->DamageableData);
             damageableBase.DamageableHit(f, victim, hitter, damage, damageable);
+        }
+
+        public void DamageableHealthRestored(Frame f, EntityRef entity, Damageable* damageable)
+        {
+            FP maxHealth = f.FindAsset(damageable->DamageableData).MaxHealth;
+            damageable->Health = maxHealth;
+            f.Events.OnHealthUpdate(entity, maxHealth, damageable->Health);
         }
     }
 }

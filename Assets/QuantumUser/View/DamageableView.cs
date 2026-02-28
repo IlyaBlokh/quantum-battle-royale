@@ -14,7 +14,7 @@ namespace QuantumUser.View
 
         public override void OnActivate(Frame frame)
         {
-            QuantumEvent.Subscribe<EventOnDamageApplied>(this, OnDamageApplied);
+            QuantumEvent.Subscribe<EventOnHealthUpdate>(this, OnDamageApplied);
         }
 
         public override void OnDeactivate()
@@ -25,9 +25,9 @@ namespace QuantumUser.View
                 StopCoroutine(_healthAnimationCoroutine);
         }
 
-        private void OnDamageApplied(EventOnDamageApplied e)
+        private void OnDamageApplied(EventOnHealthUpdate e)
         {
-            if (e.victim != EntityRef)
+            if (e.target != EntityRef)
                 return;
 
             float targetFill = (e.currentHealth / e.maxHealth).AsFloat;
