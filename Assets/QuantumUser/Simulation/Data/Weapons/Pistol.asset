@@ -9,15 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5e6001664fe63b46bd7bca85a05f820, type: 3}
-  m_Name: Default Weapon Data
-  m_EditorClassIdentifier: Quantum.Simulation::Quantum.WeaponData
+  m_Script: {fileID: 11500000, guid: ac832fb0c6b54408bf64999053ed3198, type: 3}
+  m_Name: Pistol
+  m_EditorClassIdentifier: Quantum.Simulation::Quantum.SemiAutomaticWeapon
   Identifier:
-    Path: QuantumUser/Simulation/Data/Default Weapon Data
+    Path: QuantumUser/Simulation/Data/Weapons/Pistol
     Guid:
-      Value: 521462775440714644
+      Value: 301412590222316504
   Cooldown:
-    RawValue: 65536
+    RawValue: 98304
   Offset:
     X:
       RawValue: 2294
@@ -26,3 +26,4 @@ MonoBehaviour:
     Z:
       RawValue: 117965
   Bullet: {fileID: 11400000, guid: 7b3e0fed46649d94b9951d429b9b81e0, type: 2}
+  MaxAmmo: 7

@@ -49,6 +49,14 @@ namespace Quantum {
   using RuntimeInitializeOnLoadMethodAttribute = UnityEngine.RuntimeInitializeOnLoadMethodAttribute;
   #endif //;
   
+  public enum WeaponType : int {
+    AK,
+    Pistol,
+    Revolver,
+    Shotgun,
+    SMG,
+    Sniper,
+  }
   [System.FlagsAttribute()]
   public enum InputButtons : int {
     Fire = 1 << 0,
@@ -831,15 +839,21 @@ namespace Quantum {
   }
   [StructLayout(LayoutKind.Explicit)]
   public unsafe partial struct Weapon : Quantum.IComponent {
-    public const Int32 SIZE = 16;
+    public const Int32 SIZE = 24;
     public const Int32 ALIGNMENT = 8;
-    [FieldOffset(8)]
-    public FP CooldownTime;
+    [FieldOffset(4)]
+    public WeaponType Type;
     [FieldOffset(0)]
-    public AssetRef<WeaponData> WeaponData;
+    public Byte Ammo;
+    [FieldOffset(16)]
+    public FP CooldownTime;
+    [FieldOffset(8)]
+    public AssetRef<WeaponBase> WeaponData;
     public override readonly Int32 GetHashCode() {
       unchecked { 
         var hash = 8713;
+        hash = hash * 31 + (Int32)Type;
+        hash = hash * 31 + Ammo.GetHashCode();
         hash = hash * 31 + CooldownTime.GetHashCode();
         hash = hash * 31 + WeaponData.GetHashCode();
         return hash;
@@ -847,6 +861,8 @@ namespace Quantum {
     }
     public static void Serialize(void* ptr, FrameSerializer serializer) {
         var p = (Weapon*)ptr;
+        serializer.Stream.Serialize(&p->Ammo);
+        serializer.Stream.Serialize((Int32*)&p->Type);
         AssetRef.Serialize(&p->WeaponData, serializer);
         FP.Serialize(&p->CooldownTime, serializer);
     }
@@ -858,7 +874,7 @@ namespace Quantum {
     void DamageableHealthRestored(Frame f, EntityRef entity, Damageable* damageable);
   }
   public unsafe partial interface ISignalCreateBullet : ISignal {
-    void CreateBullet(Frame f, EntityRef owner, WeaponData weaponData);
+    void CreateBullet(Frame f, EntityRef owner, FiringWeapon weaponData);
   }
   public static unsafe partial class Constants {
   }
@@ -976,7 +992,7 @@ namespace Quantum {
           }
         }
       }
-      public void CreateBullet(EntityRef owner, WeaponData weaponData) {
+      public void CreateBullet(EntityRef owner, FiringWeapon weaponData) {
         var array = _f._ISignalCreateBulletSystems;
         for (Int32 i = 0; i < array.Length; ++i) {
           var s = array[i];
@@ -1085,6 +1101,7 @@ namespace Quantum {
       typeRegistry.Register(typeof(Transform3D), Transform3D.SIZE);
       typeRegistry.Register(typeof(View), View.SIZE);
       typeRegistry.Register(typeof(Quantum.Weapon), Quantum.Weapon.SIZE);
+      typeRegistry.Register(typeof(Quantum.WeaponType), 4);
       typeRegistry.Register(typeof(Quantum._globals_), Quantum._globals_.SIZE);
     }
     static partial void InitComponentTypeIdGen() {
@@ -1107,6 +1124,7 @@ namespace Quantum {
       FramePrinter.EnsurePrimitiveNotStripped<CallbackFlags>();
       FramePrinter.EnsurePrimitiveNotStripped<Quantum.InputButtons>();
       FramePrinter.EnsurePrimitiveNotStripped<QueryOptions>();
+      FramePrinter.EnsurePrimitiveNotStripped<Quantum.WeaponType>();
     }
   }
 }

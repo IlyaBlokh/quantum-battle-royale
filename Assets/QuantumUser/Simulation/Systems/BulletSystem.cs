@@ -62,8 +62,8 @@ namespace Quantum.QuantumUser.Simulation.Systems
             if (filter.Bullet->Time <= 0)
                 frame.Destroy(filter.Entity);
         }
-
-        public void CreateBullet(Frame f, EntityRef owner, WeaponData weaponData)
+        
+        public void CreateBullet(Frame f, EntityRef owner, FiringWeapon weaponData)
         {
             BulletData bulletData = weaponData.Bullet;
             EntityRef bulletEntity = f.Create(bulletData.Bullet);
