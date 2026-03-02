@@ -11,7 +11,7 @@ namespace QuantumUser.View
 
     private void Awake()
     {
-      _playerWeapons = GetComponentsInChildren<PlayerWeapon>(this)
+      _playerWeapons = GetComponentsInChildren<PlayerWeapon>(true)
         .ToDictionary(w => w.WeaponType, w => w);
     }
 
@@ -24,6 +24,7 @@ namespace QuantumUser.View
 
       _currentWeapon = _playerWeapons[WeaponType.Pistol];
       _currentWeapon.gameObject.SetActive(true);
+      _currentWeapon.Rig.weight = 1;
       
       QuantumEvent.Subscribe<EventOnWeaponPickup>(this, OnWeaponPickup);
     }
@@ -37,8 +38,11 @@ namespace QuantumUser.View
         return;
       
       _currentWeapon.gameObject.SetActive(false);
+      _currentWeapon.Rig.weight = 0;
+      
       _currentWeapon = _playerWeapons[e.Type];
       _currentWeapon.gameObject.SetActive(true);
+      _currentWeapon.Rig.weight = 1;
     }
 
     public override void OnDeactivate()
