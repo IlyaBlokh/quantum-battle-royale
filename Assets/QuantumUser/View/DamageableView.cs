@@ -27,10 +27,10 @@ namespace QuantumUser.View
 
         private void OnDamageApplied(EventOnHealthUpdate e)
         {
-            if (e.target != EntityRef)
+            if (e.Target != EntityRef)
                 return;
 
-            float targetFill = (e.currentHealth / e.maxHealth).AsFloat;
+            float targetFill = (e.CurrentHealth / e.MaxHealth).AsFloat;
 
             if (_healthAnimationCoroutine != null)
                 StopCoroutine(_healthAnimationCoroutine);

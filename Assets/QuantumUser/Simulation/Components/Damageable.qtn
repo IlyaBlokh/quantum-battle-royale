@@ -7,7 +7,7 @@ signal DamageableHit(EntityRef victim, EntityRef hitter, FP damage, Damageable* 
 signal DamageableHealthRestored(EntityRef entity, Damageable* damageable);
 
 event OnHealthUpdate{
-    EntityRef target;
-    FP maxHealth;
-    FP currentHealth;
+    EntityRef Target;
+    FP MaxHealth;
+    FP CurrentHealth;
 }

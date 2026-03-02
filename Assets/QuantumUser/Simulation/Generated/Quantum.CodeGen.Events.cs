@@ -52,7 +52,7 @@ namespace Quantum {
   public unsafe partial class Frame {
     public unsafe partial struct FrameEvents {
       static partial void GetEventTypeCountCodeGen(ref Int32 eventCount) {
-        eventCount = 4;
+        eventCount = 5;
       }
       static partial void GetParentEventIDCodeGen(Int32 eventID, ref Int32 parentEventID) {
         switch (eventID) {
@@ -64,14 +64,15 @@ namespace Quantum {
           case EventOnHealthUpdate.ID: result = typeof(EventOnHealthUpdate); return;
           case EventOnPlayerEnterGrass.ID: result = typeof(EventOnPlayerEnterGrass); return;
           case EventOnPlayerExitGrass.ID: result = typeof(EventOnPlayerExitGrass); return;
+          case EventOnWeaponPickup.ID: result = typeof(EventOnWeaponPickup); return;
           default: break;
         }
       }
-      public EventOnHealthUpdate OnHealthUpdate(EntityRef target, FP maxHealth, FP currentHealth) {
+      public EventOnHealthUpdate OnHealthUpdate(EntityRef Target, FP MaxHealth, FP CurrentHealth) {
         var ev = _f.Context.AcquireEvent<EventOnHealthUpdate>(EventOnHealthUpdate.ID);
-        ev.target = target;
-        ev.maxHealth = maxHealth;
-        ev.currentHealth = currentHealth;
+        ev.Target = Target;
+        ev.MaxHealth = MaxHealth;
+        ev.CurrentHealth = CurrentHealth;
         _f.AddEvent(ev);
         return ev;
       }
@@ -87,13 +88,20 @@ namespace Quantum {
         _f.AddEvent(ev);
         return ev;
       }
+      public EventOnWeaponPickup OnWeaponPickup(EntityRef PickedUpEntity, WeaponType Type) {
+        var ev = _f.Context.AcquireEvent<EventOnWeaponPickup>(EventOnWeaponPickup.ID);
+        ev.PickedUpEntity = PickedUpEntity;
+        ev.Type = Type;
+        _f.AddEvent(ev);
+        return ev;
+      }
     }
   }
   public unsafe partial class EventOnHealthUpdate : EventBase {
     public new const Int32 ID = 1;
-    public EntityRef target;
-    public FP maxHealth;
-    public FP currentHealth;
+    public EntityRef Target;
+    public FP MaxHealth;
+    public FP CurrentHealth;
     protected EventOnHealthUpdate(Int32 id, EventFlags flags) : 
         base(id, flags) {
     }
@@ -111,9 +119,9 @@ namespace Quantum {
     public override Int32 GetHashCode() {
       unchecked {
         var hash = 41;
-        hash = hash * 31 + target.GetHashCode();
-        hash = hash * 31 + maxHealth.GetHashCode();
-        hash = hash * 31 + currentHealth.GetHashCode();
+        hash = hash * 31 + Target.GetHashCode();
+        hash = hash * 31 + MaxHealth.GetHashCode();
+        hash = hash * 31 + CurrentHealth.GetHashCode();
         return hash;
       }
     }
@@ -164,6 +172,33 @@ namespace Quantum {
       unchecked {
         var hash = 47;
         hash = hash * 31 + Player.GetHashCode();
+        return hash;
+      }
+    }
+  }
+  public unsafe partial class EventOnWeaponPickup : EventBase {
+    public new const Int32 ID = 4;
+    public EntityRef PickedUpEntity;
+    public WeaponType Type;
+    protected EventOnWeaponPickup(Int32 id, EventFlags flags) : 
+        base(id, flags) {
+    }
+    public EventOnWeaponPickup() : 
+        base(4, EventFlags.Server|EventFlags.Client) {
+    }
+    public new QuantumGame Game {
+      get {
+        return (QuantumGame)base.Game;
+      }
+      set {
+        base.Game = value;
+      }
+    }
+    public override Int32 GetHashCode() {
+      unchecked {
+        var hash = 53;
+        hash = hash * 31 + PickedUpEntity.GetHashCode();
+        hash = hash * 31 + Type.GetHashCode();
         return hash;
       }
     }

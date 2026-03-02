@@ -10,8 +10,9 @@
       {
         weapon->WeaponData = WeaponBase;
         weapon->CooldownTime = 0;
-        weapon->Type = WeaponBase.WeaponType;
         WeaponBase.OnInit(f, entityPickingUp, weapon);
+        
+        f.Events.OnWeaponPickup(entityPickingUp, WeaponBase.WeaponType);
       }
 
       f.Destroy(entityPickedUp);

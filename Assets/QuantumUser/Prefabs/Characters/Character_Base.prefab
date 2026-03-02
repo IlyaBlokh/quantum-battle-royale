@@ -147,6 +147,7 @@ GameObject:
   - component: {fileID: 2063234840526581440}
   - component: {fileID: 4124854408192713744}
   - component: {fileID: 5253557352598862892}
+  - component: {fileID: 878339643105829639}
   m_Layer: 6
   m_Name: Character_Base
   m_TagString: Untagged
@@ -500,8 +501,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Quantum.Unity::Quantum.QPrototypeWeapon
   Prototype:
-    Type:
-      Value: 1
     Ammo: 0
     CooldownTime:
       RawValue: 0
@@ -526,6 +525,18 @@ MonoBehaviour:
     DamageableData:
       Id:
         Value: 284511595347196819
+--- !u!114 &878339643105829639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326267824891306075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80b132d72a3c43b293ef2530479e1351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: QuantumUser.View::QuantumUser.View.PlayerWeaponView
 --- !u!1 &1739315570316238824
 GameObject:
   m_ObjectHideFlags: 0

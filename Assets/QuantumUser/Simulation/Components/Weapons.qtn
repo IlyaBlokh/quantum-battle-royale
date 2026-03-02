@@ -1,5 +1,4 @@
 component Weapon{
-    WeaponType Type;
     byte Ammo;
     FP CooldownTime;
     AssetRef<WeaponBase> WeaponData;
@@ -25,3 +24,8 @@ component Bullet{
 }
 
 signal CreateBullet(EntityRef owner, FiringWeapon weaponData);
+
+event OnWeaponPickup{
+    EntityRef PickedUpEntity;
+    WeaponType Type;
+}
