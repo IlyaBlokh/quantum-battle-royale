@@ -16,6 +16,7 @@ MonoBehaviour:
     Path: QuantumUser/Simulation/Data/Weapons/Pistol
     Guid:
       Value: 301412590222316504
+  WeaponType: 1
   Cooldown:
     RawValue: 98304
   Offset:

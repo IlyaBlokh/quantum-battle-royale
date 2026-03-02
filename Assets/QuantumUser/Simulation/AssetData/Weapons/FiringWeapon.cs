@@ -2,12 +2,12 @@
 
 namespace Quantum
 {
-  public unsafe class FiringWeapon : WeaponBase
+  public abstract unsafe class FiringWeapon : WeaponBase
   {
     public BulletData Bullet;
     public byte MaxAmmo;
 
-    public override unsafe void OnInit(Frame f, EntityRef entity, Weapon* weapon)
+    public override void OnInit(Frame f, EntityRef entity, Weapon* weapon)
     {
       weapon->Ammo = MaxAmmo;
     }

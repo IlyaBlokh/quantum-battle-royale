@@ -3,8 +3,9 @@ using Quantum.QuantumUser.Simulation.Systems;
 
 namespace Quantum
 {
-    public unsafe class WeaponBase : AssetObject
+    public abstract unsafe class WeaponBase : AssetObject
     {
+        public WeaponType WeaponType;
         public FP Cooldown;
         public FPVector3 Offset;
         
