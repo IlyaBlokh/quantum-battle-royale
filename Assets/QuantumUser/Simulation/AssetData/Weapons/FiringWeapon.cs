@@ -20,6 +20,7 @@ namespace Quantum
       filter.Weapon->CooldownTime = Cooldown;
       filter.Weapon->Ammo--;
       f.Signals.CreateBullet(filter.Entity, this);
+      f.Events.OnAmmoChanged(filter.Entity, filter.Weapon->Ammo);
     }
   }
 }

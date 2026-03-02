@@ -1,11 +1,13 @@
 using Photon.Deterministic;
 using Quantum.QuantumUser.Simulation.Systems;
+using UnityEngine;
 
 namespace Quantum
 {
     public abstract unsafe class WeaponBase : AssetObject
     {
         public WeaponType WeaponType;
+        public Sprite WeaponSprite;
         public FP Cooldown;
         public FPVector3 Offset;
         

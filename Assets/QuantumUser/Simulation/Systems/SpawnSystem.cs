@@ -13,6 +13,8 @@ namespace Quantum.QuantumUser.Simulation.Systems
 
             EntityRef playerEntityRef = CreatePlayer(f, player);
             PlacePlayerOnSpawnPosition(f, playerEntityRef);
+
+            f.Events.OnPlayerSpawn(playerEntityRef, f.Get<PlayerLink>(playerEntityRef));
         }
 
         private static EntityRef CreatePlayer(Frame f, PlayerRef player)

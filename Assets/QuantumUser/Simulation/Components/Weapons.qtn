@@ -29,3 +29,9 @@ event OnWeaponPickup{
     EntityRef PickedUpEntity;
     WeaponType Type;
 }
+
+event OnAmmoChanged
+{
+    EntityRef Entity;
+    byte Ammo;
+}
