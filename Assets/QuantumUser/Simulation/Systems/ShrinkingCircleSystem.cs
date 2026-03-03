@@ -1,0 +1,39 @@
+﻿using Photon.Deterministic;
+using UnityEngine.Scripting;
+
+namespace Quantum.QuantumUser.Simulation.Systems
+{
+  [Preserve]
+  public unsafe class ShrinkingCircleSystem : SystemMainThread, ISignalOnComponentAdded<ShrinkingCircle>
+  {
+    public void OnAdded(Frame f, EntityRef entity, ShrinkingCircle* shrinkingCircle)
+    {
+      shrinkingCircle->CurrentStateIndex = 0;
+      var config = f.FindAsset(shrinkingCircle->ShrinkingCircleConfig);
+      config.States[0].Materialize(f, ref shrinkingCircle->CurrentState);
+      shrinkingCircle->CurrentState.EnterState(shrinkingCircle);
+
+      Transform2D* transform = f.Unsafe.GetPointer<Transform2D>(entity);
+      FP randomX = f.RNG->Next(config.MinumumBounds.X, config.MaximumBounds.X);
+      FP randomY = f.RNG->Next(config.MinumumBounds.Y, config.MaximumBounds.Y);
+      transform->Position = new FPVector2(randomX, randomY);
+    }
+
+    public override void Update(Frame f)
+    {
+      ShrinkingCircle* shrinkingCircle = f.Unsafe.GetPointerSingleton<ShrinkingCircle>();
+      ShrinkingCircleConfig config = f.FindAsset(shrinkingCircle->ShrinkingCircleConfig);
+      shrinkingCircle->CurrentState.Update(f, shrinkingCircle);
+      
+      if (shrinkingCircle->CurrentTimeToNextState > 0)
+        return;
+      
+      if (shrinkingCircle->CurrentStateIndex >= config.States.Length - 1)
+        return;
+      
+      shrinkingCircle->CurrentStateIndex++;
+      config.States[shrinkingCircle->CurrentStateIndex].Materialize(f, ref shrinkingCircle->CurrentState);
+      shrinkingCircle->CurrentState.EnterState(shrinkingCircle);
+    }
+  }
+}

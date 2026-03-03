@@ -3800,6 +3800,9 @@ MonoBehaviour:
     - rid: 3984635239333888001
     - rid: 3984635239333888002
     - rid: 3984635239333888003
+  - Components:
+    - rid: 1305158441479700480
+    - rid: 1305158441479700481
   SerializedTriangleDataUncompressedSize: 452
   references:
     version: 2
@@ -3920,6 +3923,43 @@ MonoBehaviour:
         DamageableData:
           Id:
             Value: 464650273118501311
+    - rid: 1305158441479700480
+      type: {class: Transform2DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
+      data:
+        Position:
+          X:
+            RawValue: 0
+          Y:
+            RawValue: 0
+        Rotation:
+          RawValue: 0
+    - rid: 1305158441479700481
+      type: {class: ShrinkingCirclePrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
+      data:
+        ShrinkingCircleConfig:
+          Id:
+            Value: 321486193157116150
+        CurrentState:
+          TimeToNextState:
+            RawValue: 0
+          CircleStateUnion:
+            _field_used_: 
+            InitialState:
+              InitialRadius:
+                RawValue: 0
+            PreShrinkState:
+              TargetRadius:
+                RawValue: 0
+            ShrinkState:
+              ShrinkingCircleTime:
+                RawValue: 0
+            CooldownState:
+              _empty_prototype_dummy_field_: 0
+        CurrentTimeToNextState:
+          RawValue: 0
+        TargetRadius:
+          RawValue: 0
+        CurrentStateIndex: 0
     - rid: 1583157649334075392
       type: {class: Transform2DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
       data:
