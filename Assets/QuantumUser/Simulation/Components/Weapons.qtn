@@ -13,7 +13,7 @@ component Bullet{
     FPVector2 Direction;
 }
 
- enum WeaponType
+enum WeaponType
 {
     AK,
     Pistol,
