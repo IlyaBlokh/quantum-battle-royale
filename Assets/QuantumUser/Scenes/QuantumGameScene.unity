@@ -14277,6 +14277,8 @@ MonoBehaviour:
       RawValue: 0
     TargetRadius:
       RawValue: 0
+    InitialRadiusOfState:
+      RawValue: 0
     CurrentStateIndex: 0
 --- !u!114 &2015458708
 MonoBehaviour:

@@ -3959,6 +3959,10 @@ MonoBehaviour:
           RawValue: 0
         TargetRadius:
           RawValue: 0
+        CurrentRadius:
+          RawValue: 0
+        InitialRadiusOfState:
+          RawValue: 0
         CurrentStateIndex: 0
     - rid: 1583157649334075392
       type: {class: Transform2DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}

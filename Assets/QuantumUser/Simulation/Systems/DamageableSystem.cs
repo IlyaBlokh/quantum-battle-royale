@@ -4,7 +4,7 @@ using UnityEngine.Scripting;
 namespace Quantum.QuantumUser.Simulation.Systems
 {
     [Preserve]
-    public unsafe class DamageableSystem : SystemSignalsOnly, ISignalOnComponentAdded<Damageable>, ISignalDamageableHit, ISignalDamageableHealthRestored
+    public unsafe class DamageableSystem : SystemMainThreadFilter<DamageableSystem.Filter>, ISignalOnComponentAdded<Damageable>, ISignalDamageableHit, ISignalDamageableHealthRestored
     {
         public struct Filter
         {
@@ -20,6 +20,28 @@ namespace Quantum.QuantumUser.Simulation.Systems
                 return;
             
             component->Health = damageableBase.MaxHealth;
+        }
+
+        public override void Update(Frame f, ref Filter filter)
+        {
+            if (!f.Has<PlayerLink>(filter.Entity))
+                return;
+            
+            var shrinkingCircle = f.Unsafe.GetPointerSingleton<ShrinkingCircle>();
+            if (PlayerIsOutsideCirce(f, filter, shrinkingCircle))
+            {
+                var damageableAsset = f.FindAsset(filter.Damageable->DamageableData);
+                var shrinkingCircleAsset = f.FindAsset(shrinkingCircle->ShrinkingCircleConfig);
+                damageableAsset.DamageableHit(f, filter.Entity, filter.Entity, shrinkingCircleAsset.DamagePerSecond * f.DeltaTime, filter.Damageable);
+            }
+        }
+
+        private bool PlayerIsOutsideCirce(Frame f, Filter filter, ShrinkingCircle* shrinkingCircle)
+        {
+            var transform = f.Unsafe.GetPointer<Transform2D>(filter.Entity);
+
+            var distance = FPVector2.Distance(shrinkingCircle->Position, transform->Position);
+            return distance > shrinkingCircle->CurrentRadius / 2;
         }
 
         public void DamageableHit(Frame f, EntityRef victim, EntityRef hitter, FP damage, Damageable* damageable)

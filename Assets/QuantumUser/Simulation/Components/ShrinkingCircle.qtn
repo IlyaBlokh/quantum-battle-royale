@@ -4,7 +4,10 @@ singleton component ShrinkingCircle
     ShrinkingCircleState CurrentState;
     FP CurrentTimeToNextState;
     FP TargetRadius;
+    FP CurrentRadius;
+    FP InitialRadiusOfState;
     byte CurrentStateIndex;
+    FPVector2 Position;
 }
 
 component ShrinkingCircleState

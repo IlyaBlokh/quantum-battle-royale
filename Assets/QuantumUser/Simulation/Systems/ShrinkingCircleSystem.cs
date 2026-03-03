@@ -16,7 +16,9 @@ namespace Quantum.QuantumUser.Simulation.Systems
       Transform2D* transform = f.Unsafe.GetPointer<Transform2D>(entity);
       FP randomX = f.RNG->Next(config.MinumumBounds.X, config.MaximumBounds.X);
       FP randomY = f.RNG->Next(config.MinumumBounds.Y, config.MaximumBounds.Y);
-      transform->Position = new FPVector2(randomX, randomY);
+      var pos = new FPVector2(randomX, randomY);
+      transform->Position = pos;
+      shrinkingCircle->Position = pos;
     }
 
     public override void Update(Frame f)
