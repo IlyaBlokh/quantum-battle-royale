@@ -1,5 +1,4 @@
-﻿using System;
-using Quantum;
+﻿using Quantum;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
