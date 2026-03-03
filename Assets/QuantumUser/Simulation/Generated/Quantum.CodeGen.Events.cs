@@ -52,7 +52,7 @@ namespace Quantum {
   public unsafe partial class Frame {
     public unsafe partial struct FrameEvents {
       static partial void GetEventTypeCountCodeGen(ref Int32 eventCount) {
-        eventCount = 7;
+        eventCount = 8;
       }
       static partial void GetParentEventIDCodeGen(Int32 eventID, ref Int32 parentEventID) {
         switch (eventID) {
@@ -65,6 +65,7 @@ namespace Quantum {
           case EventOnPlayerEnterGrass.ID: result = typeof(EventOnPlayerEnterGrass); return;
           case EventOnPlayerExitGrass.ID: result = typeof(EventOnPlayerExitGrass); return;
           case EventOnPlayerSpawn.ID: result = typeof(EventOnPlayerSpawn); return;
+          case EventShrinkingCircleStateChanged.ID: result = typeof(EventShrinkingCircleStateChanged); return;
           case EventOnWeaponPickup.ID: result = typeof(EventOnWeaponPickup); return;
           case EventOnAmmoChanged.ID: result = typeof(EventOnAmmoChanged); return;
           default: break;
@@ -94,6 +95,12 @@ namespace Quantum {
         var ev = _f.Context.AcquireEvent<EventOnPlayerSpawn>(EventOnPlayerSpawn.ID);
         ev.PlayerEntity = PlayerEntity;
         ev.PlayerLink = PlayerLink;
+        _f.AddEvent(ev);
+        return ev;
+      }
+      public EventShrinkingCircleStateChanged ShrinkingCircleStateChanged() {
+        if (_f.IsPredicted) return null;
+        var ev = _f.Context.AcquireEvent<EventShrinkingCircleStateChanged>(EventShrinkingCircleStateChanged.ID);
         _f.AddEvent(ev);
         return ev;
       }
@@ -219,15 +226,13 @@ namespace Quantum {
       }
     }
   }
-  public unsafe partial class EventOnWeaponPickup : EventBase {
+  public unsafe partial class EventShrinkingCircleStateChanged : EventBase {
     public new const Int32 ID = 5;
-    public EntityRef PickedUpEntity;
-    public WeaponType Type;
-    protected EventOnWeaponPickup(Int32 id, EventFlags flags) : 
+    protected EventShrinkingCircleStateChanged(Int32 id, EventFlags flags) : 
         base(id, flags) {
     }
-    public EventOnWeaponPickup() : 
-        base(5, EventFlags.Server|EventFlags.Client) {
+    public EventShrinkingCircleStateChanged() : 
+        base(5, EventFlags.Server|EventFlags.Client|EventFlags.Synced) {
     }
     public new QuantumGame Game {
       get {
@@ -240,20 +245,18 @@ namespace Quantum {
     public override Int32 GetHashCode() {
       unchecked {
         var hash = 59;
-        hash = hash * 31 + PickedUpEntity.GetHashCode();
-        hash = hash * 31 + Type.GetHashCode();
         return hash;
       }
     }
   }
-  public unsafe partial class EventOnAmmoChanged : EventBase {
+  public unsafe partial class EventOnWeaponPickup : EventBase {
     public new const Int32 ID = 6;
-    public EntityRef Entity;
-    public Byte Ammo;
-    protected EventOnAmmoChanged(Int32 id, EventFlags flags) : 
+    public EntityRef PickedUpEntity;
+    public WeaponType Type;
+    protected EventOnWeaponPickup(Int32 id, EventFlags flags) : 
         base(id, flags) {
     }
-    public EventOnAmmoChanged() : 
+    public EventOnWeaponPickup() : 
         base(6, EventFlags.Server|EventFlags.Client) {
     }
     public new QuantumGame Game {
@@ -267,6 +270,33 @@ namespace Quantum {
     public override Int32 GetHashCode() {
       unchecked {
         var hash = 61;
+        hash = hash * 31 + PickedUpEntity.GetHashCode();
+        hash = hash * 31 + Type.GetHashCode();
+        return hash;
+      }
+    }
+  }
+  public unsafe partial class EventOnAmmoChanged : EventBase {
+    public new const Int32 ID = 7;
+    public EntityRef Entity;
+    public Byte Ammo;
+    protected EventOnAmmoChanged(Int32 id, EventFlags flags) : 
+        base(id, flags) {
+    }
+    public EventOnAmmoChanged() : 
+        base(7, EventFlags.Server|EventFlags.Client) {
+    }
+    public new QuantumGame Game {
+      get {
+        return (QuantumGame)base.Game;
+      }
+      set {
+        base.Game = value;
+      }
+    }
+    public override Int32 GetHashCode() {
+      unchecked {
+        var hash = 67;
         hash = hash * 31 + Entity.GetHashCode();
         hash = hash * 31 + Ammo.GetHashCode();
         return hash;

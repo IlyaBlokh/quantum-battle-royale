@@ -1,7 +1,7 @@
-﻿using System.Collections;
-using Quantum;
+﻿using Quantum;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 namespace QuantumUser.View
 {
@@ -10,7 +10,7 @@ namespace QuantumUser.View
         [SerializeField] private Image healthBarFill;
         [SerializeField] private float animationDuration = 0.3f;
 
-        private Coroutine _healthAnimationCoroutine;
+        private Tween _healthTween;
 
         public override void OnActivate(Frame frame)
         {
@@ -20,9 +20,7 @@ namespace QuantumUser.View
         public override void OnDeactivate()
         {
             QuantumEvent.UnsubscribeListener(this);
-            
-            if (_healthAnimationCoroutine != null)
-                StopCoroutine(_healthAnimationCoroutine);
+            _healthTween?.Kill();
         }
 
         private void OnDamageApplied(EventOnHealthUpdate e)
@@ -32,30 +30,10 @@ namespace QuantumUser.View
 
             float targetFill = (e.CurrentHealth / e.MaxHealth).AsFloat;
 
-            if (_healthAnimationCoroutine != null)
-                StopCoroutine(_healthAnimationCoroutine);
-
-            _healthAnimationCoroutine = StartCoroutine(AnimateHealthBar(targetFill));
-        }
-
-        private IEnumerator AnimateHealthBar(float targetFill)
-        {
-            float startFill = healthBarFill.fillAmount;
-            float elapsed = 0f;
-
-            while (elapsed < animationDuration)
-            {
-                elapsed += Time.deltaTime;
-                float t = elapsed / animationDuration;
-                
-                t = t * t * (3f - 2f * t);
-                
-                healthBarFill.fillAmount = Mathf.Lerp(startFill, targetFill, t);
-                yield return null;
-            }
-
-            healthBarFill.fillAmount = targetFill;
-            _healthAnimationCoroutine = null;
+            _healthTween?.Kill();
+            _healthTween = healthBarFill
+                .DOFillAmount(targetFill, animationDuration)
+                .SetEase(Ease.InOutQuad);
         }
     }
 }

@@ -42,3 +42,7 @@ struct ShrinkState
 struct CooldownState
 {
 }
+
+synced event ShrinkingCircleStateChanged
+{
+}
