@@ -23,7 +23,7 @@ MonoBehaviour:
       _field_used_: INITIALSTATE
       InitialState:
         InitialRadius:
-          RawValue: 13107200
+          RawValue: 19660800
       PreShrinkState:
         TargetRadius:
           RawValue: 0
@@ -48,7 +48,7 @@ MonoBehaviour:
       CooldownState:
         _empty_prototype_dummy_field_: 0
   - TimeToNextState:
-      RawValue: 1310720
+      RawValue: 1966080
     CircleStateUnion:
       _field_used_: SHRINKSTATE
       InitialState:
@@ -162,6 +162,51 @@ MonoBehaviour:
       PreShrinkState:
         TargetRadius:
           RawValue: 3932160
+      ShrinkState:
+        ShrinkingCircleTime:
+          RawValue: 0
+      CooldownState:
+        _empty_prototype_dummy_field_: 0
+  - TimeToNextState:
+      RawValue: 1310720
+    CircleStateUnion:
+      _field_used_: PRESHRINKSTATE
+      InitialState:
+        InitialRadius:
+          RawValue: 13107200
+      PreShrinkState:
+        TargetRadius:
+          RawValue: 983040
+      ShrinkState:
+        ShrinkingCircleTime:
+          RawValue: 0
+      CooldownState:
+        _empty_prototype_dummy_field_: 0
+  - TimeToNextState:
+      RawValue: 1310720
+    CircleStateUnion:
+      _field_used_: SHRINKSTATE
+      InitialState:
+        InitialRadius:
+          RawValue: 13107200
+      PreShrinkState:
+        TargetRadius:
+          RawValue: 983040
+      ShrinkState:
+        ShrinkingCircleTime:
+          RawValue: 0
+      CooldownState:
+        _empty_prototype_dummy_field_: 0
+  - TimeToNextState:
+      RawValue: 1310720
+    CircleStateUnion:
+      _field_used_: COOLDOWNSTATE
+      InitialState:
+        InitialRadius:
+          RawValue: 13107200
+      PreShrinkState:
+        TargetRadius:
+          RawValue: 983040
       ShrinkState:
         ShrinkingCircleTime:
           RawValue: 0

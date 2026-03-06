@@ -34,7 +34,7 @@ namespace QuantumUser.View
 
     private void OnWeaponPickup(EventOnWeaponPickup e)
     {
-      Frame frame = e.Game.Frames.Verified;
+      Frame frame = e.Game.Frames.Predicted;
       if (e.Game.PlayerIsLocal(frame.Get<PlayerLink>(e.PickedUpEntity).PlayerRef)) 
         SetImageAndText(e.Game.Frames.Verified, e.PickedUpEntity);
     }
