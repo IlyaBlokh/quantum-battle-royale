@@ -9,12 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fc27c21974c4254b0b9db8230f47110, type: 3}
-  m_Name: Basic Pickup Item
-  m_EditorClassIdentifier: Quantum.Simulation::Quantum.BasicPickupItem
+  m_Script: {fileID: 11500000, guid: 7146d158cf9d40fb8e3472d0da70dd79, type: 3}
+  m_Name: Ammo Pickup Item
+  m_EditorClassIdentifier: Quantum.Simulation::Quantum.AmmoPickupItem
   Identifier:
-    Path: QuantumUser/Simulation/Data/Basic Pickup Item
+    Path: QuantumUser/Simulation/Data/PickupItems/Ammo Pickup Item
     Guid:
-      Value: 414223777374486875
+      Value: 417554278303520211
   PickupTime:
-    RawValue: 65536
+    RawValue: 98304
