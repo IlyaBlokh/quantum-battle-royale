@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac832fb0c6b54408bf64999053ed3198, type: 3}
-  m_Name: Pistol
+  m_Name: Sniper Riffle
   m_EditorClassIdentifier: Quantum.Simulation::Quantum.SemiAutomaticWeapon
   Identifier:
-    Path: QuantumUser/Simulation/Data/Weapons/Pistol
+    Path: QuantumUser/Simulation/Data/Weapons/Sniper Riffle
     Guid:
-      Value: 301412590222316504
-  WeaponType: 1
-  WeaponSprite: {fileID: 21300000, guid: 508121b9229188d46b3ac8cedebf030c, type: 3}
+      Value: 497422930643982637
+  WeaponType: 5
+  WeaponSprite: {fileID: 21300000, guid: 78a3267e158fd90488d8694d16ed1de0, type: 3}
   Cooldown:
-    RawValue: 26214
+    RawValue: 98304
   Offset:
     X:
       RawValue: 2294
@@ -27,8 +27,5 @@ MonoBehaviour:
       RawValue: 98304
     Z:
       RawValue: 117965
-  Bullet: {fileID: 11400000, guid: 7b3e0fed46649d94b9951d429b9b81e0, type: 2}
-  MaxAmmo: 7
-  BulletsPerClick: 1
-  BurstInterval:
-    RawValue: 0
+  Bullet: {fileID: 11400000, guid: 670c0fa98cc486a4296c7909653b9906, type: 2}
+  MaxAmmo: 5

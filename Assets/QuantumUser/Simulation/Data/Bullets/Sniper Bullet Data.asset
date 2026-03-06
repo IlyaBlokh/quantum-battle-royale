@@ -9,20 +9,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2ff32861ec342bf8b29789d699164d4, type: 3}
-  m_Name: Shotgun Bullet Data
-  m_EditorClassIdentifier: Quantum.Simulation::Quantum.ShotgunBulletData
+  m_Script: {fileID: 11500000, guid: 2bd0d2f85c609a24d8fd0eaadefd7e24, type: 3}
+  m_Name: Sniper Bullet Data
+  m_EditorClassIdentifier: Quantum.Simulation::Quantum.BulletData
   Identifier:
-    Path: QuantumUser/Simulation/Data/Bullets/Shotgun Bullet Data
+    Path: QuantumUser/Simulation/Data/Bullets/Sniper Bullet Data
     Guid:
-      Value: 290156507313035417
+      Value: 427268927684854570
   Duration:
-    RawValue: 16384
+    RawValue: 262144
   Bullet: {fileID: 3097001405596171208, guid: d36adbe155245be458e2ba6f7a7c9089, type: 3}
   Damage:
-    RawValue: 983040
+    RawValue: 6553600
   Speed:
     RawValue: 2949120
-  NumBullets: 5
-  SpreadAngle:
-    RawValue: 1310720

@@ -338,6 +338,7 @@ namespace Quantum.Prototypes {
     public Byte Ammo;
     public FP CooldownTime;
     public AssetRef<WeaponBase> WeaponData;
+    public Int32 BurstShotsRemaining;
     partial void MaterializeUser(Frame frame, ref Quantum.Weapon result, in PrototypeMaterializationContext context);
     public override Boolean AddToEntity(FrameBase f, EntityRef entity, in PrototypeMaterializationContext context) {
         Quantum.Weapon component = default;
@@ -348,6 +349,7 @@ namespace Quantum.Prototypes {
         result.Ammo = this.Ammo;
         result.CooldownTime = this.CooldownTime;
         result.WeaponData = this.WeaponData;
+        result.BurstShotsRemaining = this.BurstShotsRemaining;
         MaterializeUser(frame, ref result, in context);
     }
   }

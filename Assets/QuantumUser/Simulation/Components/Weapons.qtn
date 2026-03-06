@@ -2,6 +2,7 @@ component Weapon{
     byte Ammo;
     FP CooldownTime;
     AssetRef<WeaponBase> WeaponData;
+    Int32 BurstShotsRemaining;
 }
 
 component Bullet{

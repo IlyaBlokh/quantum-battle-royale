@@ -1093,18 +1093,22 @@ namespace Quantum {
     public FP CooldownTime;
     [FieldOffset(8)]
     public AssetRef<WeaponBase> WeaponData;
+    [FieldOffset(4)]
+    public Int32 BurstShotsRemaining;
     public override readonly Int32 GetHashCode() {
       unchecked { 
         var hash = 8713;
         hash = hash * 31 + Ammo.GetHashCode();
         hash = hash * 31 + CooldownTime.GetHashCode();
         hash = hash * 31 + WeaponData.GetHashCode();
+        hash = hash * 31 + BurstShotsRemaining.GetHashCode();
         return hash;
       }
     }
     public static void Serialize(void* ptr, FrameSerializer serializer) {
         var p = (Weapon*)ptr;
         serializer.Stream.Serialize(&p->Ammo);
+        serializer.Stream.Serialize(&p->BurstShotsRemaining);
         AssetRef.Serialize(&p->WeaponData, serializer);
         FP.Serialize(&p->CooldownTime, serializer);
     }

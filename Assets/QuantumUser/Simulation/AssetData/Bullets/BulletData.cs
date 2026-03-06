@@ -11,20 +11,25 @@ namespace Quantum
 
         public virtual void CreateBullet(Frame f, WeaponBase weaponData, EntityRef owner)
         {
+            CreateSingleBullet(f, weaponData, owner, FP._0);
+        }
+
+        protected void CreateSingleBullet(Frame f, WeaponBase weaponData, EntityRef owner, FP rotationOffset)
+        {
             EntityRef bulletEntity = f.Create(Bullet);
-            
+
             Transform2D* bullerTransform = f.Unsafe.GetPointer<Transform2D>(bulletEntity);
             Transform2D ownerTransform = f.Get<Transform2D>(owner);
             bullerTransform->Position = ownerTransform.Position + FPVector2.Rotate(weaponData.Offset.XZ, ownerTransform.Rotation);
-            bullerTransform->Rotation = ownerTransform.Rotation;
-            
+            bullerTransform->Rotation = ownerTransform.Rotation + rotationOffset;
+
             Bullet* bullet = f.Unsafe.GetPointer<Bullet>(bulletEntity);
             bullet->Speed = Speed;
             bullet->Damage = Damage;
             bullet->HeightOffset = weaponData.Offset.Y;
             bullet->Owner = owner;
             bullet->Time = Duration;
-            bullet->Direction = ownerTransform.Up;
+            bullet->Direction = bullerTransform->Up;
         }
     }
 }

@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2bd0d2f85c609a24d8fd0eaadefd7e24, type: 3}
-  m_Name: Bullet Data
+  m_Name: Revolver Bullet Data
   m_EditorClassIdentifier: Quantum.Simulation::Quantum.BulletData
   Identifier:
-    Path: QuantumUser/Simulation/Data/Bullets/Bullet Data
+    Path: QuantumUser/Simulation/Data/Bullets/Revolver Bullet Data
     Guid:
-      Value: 490633307569113569
+      Value: 299856223722214696
   Duration:
-    RawValue: 196608
+    RawValue: 98304
   Bullet: {fileID: 3097001405596171208, guid: d36adbe155245be458e2ba6f7a7c9089, type: 3}
   Damage:
-    RawValue: 1310720
+    RawValue: 2293760
   Speed:
     RawValue: 2949120

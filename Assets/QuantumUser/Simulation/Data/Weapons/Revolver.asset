@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac832fb0c6b54408bf64999053ed3198, type: 3}
-  m_Name: Pistol
+  m_Name: Revolver
   m_EditorClassIdentifier: Quantum.Simulation::Quantum.SemiAutomaticWeapon
   Identifier:
-    Path: QuantumUser/Simulation/Data/Weapons/Pistol
+    Path: QuantumUser/Simulation/Data/Weapons/Revolver
     Guid:
-      Value: 301412590222316504
-  WeaponType: 1
-  WeaponSprite: {fileID: 21300000, guid: 508121b9229188d46b3ac8cedebf030c, type: 3}
+      Value: 276340656655261737
+  WeaponType: 2
+  WeaponSprite: {fileID: 21300000, guid: 8faa1562423ba2147a6d37c0a5805113, type: 3}
   Cooldown:
-    RawValue: 26214
+    RawValue: 52429
   Offset:
     X:
       RawValue: 2294
@@ -27,8 +27,8 @@ MonoBehaviour:
       RawValue: 98304
     Z:
       RawValue: 117965
-  Bullet: {fileID: 11400000, guid: 7b3e0fed46649d94b9951d429b9b81e0, type: 2}
-  MaxAmmo: 7
+  Bullet: {fileID: 11400000, guid: d0eedb01dd9fbe84198125369987b0eb, type: 2}
+  MaxAmmo: 6
   BulletsPerClick: 1
   BurstInterval:
     RawValue: 0
