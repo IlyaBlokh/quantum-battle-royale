@@ -23,6 +23,10 @@ namespace Quantum.QuantumUser.Simulation.Systems
 
     public override void Update(Frame f)
     {
+      GameManager* gameManager = f.Unsafe.GetPointerSingleton<GameManager>();
+      if (gameManager->CurrentGameState != GameState.Playing)
+        return;
+      
       ShrinkingCircle* shrinkingCircle = f.Unsafe.GetPointerSingleton<ShrinkingCircle>();
       ShrinkingCircleConfig config = f.FindAsset(shrinkingCircle->ShrinkingCircleConfig);
       shrinkingCircle->CurrentState.Update(f, shrinkingCircle);

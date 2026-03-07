@@ -3742,6 +3742,9 @@ MonoBehaviour:
       MutableMode: 0
   MapEntities:
   - Components:
+    - rid: 6407079682851733504
+    - rid: 6407079682851733505
+  - Components:
     - rid: 2519032421144330240
     - rid: 2519032421144330241
   - Components:
@@ -4259,6 +4262,26 @@ MonoBehaviour:
         PickupItemBase:
           Id:
             Value: 286942153596706398
+    - rid: 6407079682851733504
+      type: {class: Transform2DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
+      data:
+        Position:
+          X:
+            RawValue: 0
+          Y:
+            RawValue: 0
+        Rotation:
+          RawValue: 0
+    - rid: 6407079682851733505
+      type: {class: GameManagerPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
+      data:
+        CurrentGameState:
+          Value: 0
+        TimeToWaitForPlayers:
+          RawValue: 0
+        GameManagerConfig:
+          Id:
+            Value: 497690870282809896
     - rid: 6417156225883963392
       type: {class: Transform2DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
       data:

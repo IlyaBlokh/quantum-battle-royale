@@ -16,6 +16,10 @@ namespace Quantum.QuantumUser.Simulation.Systems
 
         public override void Update(Frame f, ref Filter filter)
         {
+            GameManager* gameManager = f.Unsafe.GetPointerSingleton<GameManager>();
+            if (gameManager->CurrentGameState != GameState.Playing)
+                return;
+            
             Input* input = f.GetPlayerInput(filter.PlayerLink->PlayerRef);
             RotatePlayer(filter, input);
             MovePlayer(f, filter, input);

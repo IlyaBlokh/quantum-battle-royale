@@ -13,6 +13,8 @@ namespace Quantum
       if (damageable->Health <= 0)
       {
         DropLoop(f, target);
+        f.Signals.DamageableDestroyed(target);
+        f.Signals.PLayerKilled();
         f.Destroy(target);
         return;
       }
