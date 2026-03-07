@@ -8,5 +8,6 @@ namespace Quantum.Menu
     [field:SerializeField] public Sprite CharacterImage { get; private set; }
     [field:SerializeField] public string CharacterName { get; private set; }
     [field:SerializeField] public EntityPrototype EntityPrototype { get; private set; }
+    [field:SerializeField] public CharacterConfig CharacterConfig { get; private set; }
   }
 }

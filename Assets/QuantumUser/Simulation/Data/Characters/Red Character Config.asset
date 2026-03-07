@@ -19,4 +19,4 @@ MonoBehaviour:
   HealthMultiplier:
     RawValue: 81920
   FireRateModifier:
-    RawValue: 49152
+    RawValue: 81920

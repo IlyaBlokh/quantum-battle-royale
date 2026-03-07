@@ -1,4 +1,5 @@
-﻿using Quantum.QuantumUser.Simulation.Systems;
+﻿using Photon.Deterministic;
+using Quantum.QuantumUser.Simulation.Systems;
 
 namespace Quantum
 {
@@ -17,7 +18,11 @@ namespace Quantum
       if (filter.Weapon->Ammo <= 0)
         return;
 
-      filter.Weapon->CooldownTime = Cooldown;
+      FP multiplier = FP._1;
+      if (f.TryGet(filter.Entity, out Character character)) 
+        multiplier = f.FindAsset(character.CharacterConfig).FireRateModifier;
+
+      filter.Weapon->CooldownTime = Cooldown * multiplier;
       filter.Weapon->Ammo--;
       f.Signals.CreateBullet(filter.Entity, this);
       f.Events.OnAmmoChanged(filter.Entity, filter.Weapon->Ammo);

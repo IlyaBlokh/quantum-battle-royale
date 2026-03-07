@@ -18,8 +18,12 @@ namespace Quantum.QuantumUser.Simulation.Systems
             
             if (damageableBase == null)
                 return;
+
+            FP multiplier = FP._1;
+            if (f.TryGet(entity, out Character character)) 
+                multiplier = f.FindAsset(character.CharacterConfig).HealthMultiplier;
             
-            component->Health = damageableBase.MaxHealth;
+            component->Health = damageableBase.MaxHealth * multiplier;
         }
 
         public override void Update(Frame f, ref Filter filter)
