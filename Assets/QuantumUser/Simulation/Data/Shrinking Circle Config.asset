@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4733c946657a12e4f9e2a04b835da225, type: 3}
-  m_Name: Default Shrinking Circle Config
+  m_Name: Shrinking Circle Config
   m_EditorClassIdentifier: Quantum.Simulation::Quantum.ShrinkingCircleConfig
   Identifier:
-    Path: QuantumUser/Simulation/Data/Default Shrinking Circle Config
+    Path: QuantumUser/Simulation/Data/Shrinking Circle Config
     Guid:
       Value: 321486193157116150
   States:
