@@ -1,0 +1,4 @@
+component Character 
+{
+    AssetRef<CharacterConfig> CharacterConfig;
+}

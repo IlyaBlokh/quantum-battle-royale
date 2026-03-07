@@ -148,6 +148,7 @@ GameObject:
   - component: {fileID: 4124854408192713744}
   - component: {fileID: 5253557352598862892}
   - component: {fileID: 878339643105829639}
+  - component: {fileID: 2417472171765727844}
   m_Layer: 6
   m_Name: Character_Base
   m_TagString: Untagged
@@ -507,6 +508,7 @@ MonoBehaviour:
     WeaponData:
       Id:
         Value: 301412590222316504
+    BurstShotsRemaining: 0
 --- !u!114 &5253557352598862892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -537,6 +539,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80b132d72a3c43b293ef2530479e1351, type: 3}
   m_Name: 
   m_EditorClassIdentifier: QuantumUser.View::QuantumUser.View.PlayerWeaponView
+--- !u!114 &2417472171765727844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326267824891306075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be8d95925397d0b46933bbb4325cdb94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Quantum.Unity::Quantum.QPrototypeCharacter
+  Prototype:
+    CharacterConfig:
+      Id:
+        Value: 0
 --- !u!1 &1739315570316238824
 GameObject:
   m_ObjectHideFlags: 0

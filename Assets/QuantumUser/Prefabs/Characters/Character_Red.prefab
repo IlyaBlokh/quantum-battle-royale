@@ -3488,6 +3488,10 @@ PrefabInstance:
       propertyPath: m_RigLayers.Array.data[1].m_Active
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2417472171765727844, guid: 087898557506e714b83fb874784c9772, type: 3}
+      propertyPath: Prototype.CharacterConfig.Id.Value
+      value: 294779890698637079
+      objectReference: {fileID: 0}
     - target: {fileID: 2549237700841913675, guid: 087898557506e714b83fb874784c9772, type: 3}
       propertyPath: Prototype.PlayerStatsConfig.Id.Value
       value: 305594962581709274
