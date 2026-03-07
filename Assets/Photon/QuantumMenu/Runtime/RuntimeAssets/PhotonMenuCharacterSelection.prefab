@@ -130,9 +130,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Quantum.Menu::Quantum.Menu.QuantumMenuCharacterSelection
   _isModal: 0
   _plugins: []
-  _characterModels:
+  characterModels:
   - {fileID: 11400000, guid: b4030172cf5288241aeafa000447d413, type: 2}
   - {fileID: 11400000, guid: fdbfce5fcd29d094789c09dd71fedded, type: 2}
+  selectableCharacter: {fileID: 0}
 --- !u!1001 &3310361913442126554
 PrefabInstance:
   m_ObjectHideFlags: 0
