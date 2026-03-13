@@ -15,7 +15,7 @@ MonoBehaviour:
   AppSettings:
     AppIdRealtime: 
     AppIdFusion: 
-    AppIdQuantum: 5d8f00a8-b001-4ddc-9a39-14ae8d241361
+    AppIdQuantum: 
     AppIdChat: 
     AppIdVoice: 
     AppVersion: 
