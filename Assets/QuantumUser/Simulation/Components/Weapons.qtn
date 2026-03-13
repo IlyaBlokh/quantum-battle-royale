@@ -36,3 +36,8 @@ event OnAmmoChanged
     EntityRef Entity;
     byte Ammo;
 }
+
+event OnShotFired
+{
+    EntityRef Entity;
+}

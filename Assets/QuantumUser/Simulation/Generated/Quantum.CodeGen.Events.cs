@@ -52,7 +52,7 @@ namespace Quantum {
   public unsafe partial class Frame {
     public unsafe partial struct FrameEvents {
       static partial void GetEventTypeCountCodeGen(ref Int32 eventCount) {
-        eventCount = 9;
+        eventCount = 10;
       }
       static partial void GetParentEventIDCodeGen(Int32 eventID, ref Int32 parentEventID) {
         switch (eventID) {
@@ -69,6 +69,7 @@ namespace Quantum {
           case EventShrinkingCircleStateChanged.ID: result = typeof(EventShrinkingCircleStateChanged); return;
           case EventOnWeaponPickup.ID: result = typeof(EventOnWeaponPickup); return;
           case EventOnAmmoChanged.ID: result = typeof(EventOnAmmoChanged); return;
+          case EventOnShotFired.ID: result = typeof(EventOnShotFired); return;
           default: break;
         }
       }
@@ -122,6 +123,12 @@ namespace Quantum {
         var ev = _f.Context.AcquireEvent<EventOnAmmoChanged>(EventOnAmmoChanged.ID);
         ev.Entity = Entity;
         ev.Ammo = Ammo;
+        _f.AddEvent(ev);
+        return ev;
+      }
+      public EventOnShotFired OnShotFired(EntityRef Entity) {
+        var ev = _f.Context.AcquireEvent<EventOnShotFired>(EventOnShotFired.ID);
+        ev.Entity = Entity;
         _f.AddEvent(ev);
         return ev;
       }
@@ -331,6 +338,31 @@ namespace Quantum {
         var hash = 71;
         hash = hash * 31 + Entity.GetHashCode();
         hash = hash * 31 + Ammo.GetHashCode();
+        return hash;
+      }
+    }
+  }
+  public unsafe partial class EventOnShotFired : EventBase {
+    public new const Int32 ID = 9;
+    public EntityRef Entity;
+    protected EventOnShotFired(Int32 id, EventFlags flags) : 
+        base(id, flags) {
+    }
+    public EventOnShotFired() : 
+        base(9, EventFlags.Server|EventFlags.Client) {
+    }
+    public new QuantumGame Game {
+      get {
+        return (QuantumGame)base.Game;
+      }
+      set {
+        base.Game = value;
+      }
+    }
+    public override Int32 GetHashCode() {
+      unchecked {
+        var hash = 73;
+        hash = hash * 31 + Entity.GetHashCode();
         return hash;
       }
     }

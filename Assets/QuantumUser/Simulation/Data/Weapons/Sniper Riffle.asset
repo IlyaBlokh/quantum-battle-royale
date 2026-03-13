@@ -29,6 +29,7 @@ MonoBehaviour:
       RawValue: 117965
   CameraYOffset:
     RawValue: 1146880
+  ShotSound: {fileID: 8300000, guid: 929fd214252d7034d93c9463bf63e091, type: 3}
   Bullet: {fileID: 11400000, guid: 670c0fa98cc486a4296c7909653b9906, type: 2}
   MaxAmmo: 5
   BulletsPerClick: 0

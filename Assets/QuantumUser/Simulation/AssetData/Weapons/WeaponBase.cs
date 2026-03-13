@@ -11,6 +11,7 @@ namespace Quantum
         public FP Cooldown;
         public FPVector3 Offset;
         public FP CameraYOffset;
+        public AudioClip ShotSound;
         
         public virtual void OnInit(Frame f, EntityRef entity, Weapon* weapon) { }
 
