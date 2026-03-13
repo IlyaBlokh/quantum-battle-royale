@@ -2,6 +2,8 @@
 
 A top-down multiplayer battle royale built with Unity 6 and Photon Quantum 3 — a deterministic networking framework that ensures consistent simulation across all clients.
 
+[![Gameplay Video](https://img.youtube.com/vi/n0uN70tbhQQ/0.jpg)](https://youtu.be/n0uN70tbhQQ)
+
 ## Tech Stack
 
 | | |
