@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: fae58c22a300b47489403eb6af597bd8
+labels:
+- Effect
+timeCreated: 1512423192
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/packs/StylizedProjectilePack1/prefabs/Plasma/Plasma_LightBlue/Plasma_Big_LightBlue/Plasma_LightBlue_Big_Impact.prefab
+  uploadId: 414036

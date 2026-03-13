@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: a2700d7f89910434081c7dc7c92e22ca
+labels:
+- Effect
+timeCreated: 1485786815
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/packs/StylizedProjectilePack1/prefabs/Bullet/Bullet_BlazingRed/Bullet_Small_BlazingRed/Bullet_BlazingRed_Small_Projectile.prefab
+  uploadId: 414036

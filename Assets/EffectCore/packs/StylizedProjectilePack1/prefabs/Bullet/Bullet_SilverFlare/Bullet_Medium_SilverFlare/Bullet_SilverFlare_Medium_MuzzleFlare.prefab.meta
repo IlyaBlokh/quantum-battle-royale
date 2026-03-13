@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 2eb0d1c997028f344ba8ee6cc887fab7
+timeCreated: 1510008393
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/packs/StylizedProjectilePack1/prefabs/Bullet/Bullet_SilverFlare/Bullet_Medium_SilverFlare/Bullet_SilverFlare_Medium_MuzzleFlare.prefab
+  uploadId: 414036

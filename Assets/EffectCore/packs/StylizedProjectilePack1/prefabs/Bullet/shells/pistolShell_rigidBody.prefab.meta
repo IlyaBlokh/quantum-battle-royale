@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5de6664aa6146f745a81d5dc9e9ed4fa
+timeCreated: 1486228038
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/packs/StylizedProjectilePack1/prefabs/Bullet/shells/pistolShell_rigidBody.prefab
+  uploadId: 414036

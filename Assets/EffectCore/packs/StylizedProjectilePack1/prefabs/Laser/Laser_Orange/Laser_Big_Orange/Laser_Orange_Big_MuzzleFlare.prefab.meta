@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 575f1cf1c4503354a9a2e195b40e2bea
+labels:
+- Effect
+timeCreated: 1478716713
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/packs/StylizedProjectilePack1/prefabs/Laser/Laser_Orange/Laser_Big_Orange/Laser_Orange_Big_MuzzleFlare.prefab
+  uploadId: 414036

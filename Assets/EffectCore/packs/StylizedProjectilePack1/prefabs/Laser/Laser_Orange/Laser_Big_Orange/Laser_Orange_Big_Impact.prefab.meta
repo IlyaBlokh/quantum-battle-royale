@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: d3fd8aa88ebf6004ca25927e96653cbf
+labels:
+- Effect
+timeCreated: 1485871689
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/packs/StylizedProjectilePack1/prefabs/Laser/Laser_Orange/Laser_Big_Orange/Laser_Orange_Big_Impact.prefab
+  uploadId: 414036

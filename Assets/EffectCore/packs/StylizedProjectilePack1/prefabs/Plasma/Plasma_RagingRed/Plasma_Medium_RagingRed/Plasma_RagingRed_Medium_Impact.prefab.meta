@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 194f033b43d363949850b7e8cf1cff4d
+labels:
+- Effect
+timeCreated: 1485871689
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/packs/StylizedProjectilePack1/prefabs/Plasma/Plasma_RagingRed/Plasma_Medium_RagingRed/Plasma_RagingRed_Medium_Impact.prefab
+  uploadId: 414036

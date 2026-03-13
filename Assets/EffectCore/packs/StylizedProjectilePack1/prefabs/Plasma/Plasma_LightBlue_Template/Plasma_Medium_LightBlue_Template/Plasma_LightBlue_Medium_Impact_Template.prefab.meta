@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: f865eca73a7e7a7419acd3a542fb9197
+labels:
+- Effect
+timeCreated: 1485871689
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/packs/StylizedProjectilePack1/prefabs/Plasma/Plasma_LightBlue_Template/Plasma_Medium_LightBlue_Template/Plasma_LightBlue_Medium_Impact_Template.prefab
+  uploadId: 414036

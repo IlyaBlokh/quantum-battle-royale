@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a0cfbe1a7f61c6b45bffcfc67779df5f
+timeCreated: 1485877007
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/packs/WebDemoAssets/animators/recoil_light.anim
+  uploadId: 414036

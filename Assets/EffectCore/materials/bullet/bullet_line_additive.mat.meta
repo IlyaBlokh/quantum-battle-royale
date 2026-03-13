@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: be8a68a4ceb83f947b32e8cd8e36d668
+timeCreated: 1478435619
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/materials/bullet/bullet_line_additive.mat
+  uploadId: 414036

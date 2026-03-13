@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 3c156ec90b33acd4a992851f55a27eac
+timeCreated: 1509477359
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/packs/StylizedProjectilePack1/prefabs/Bullet/Bullet_VenomGreen/Bullet_Big_VenomGreen/Bullet_VenomGreen_Big_Projectile.prefab
+  uploadId: 414036

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: df1a1922af2b37e4f9ade4203d8566bd
+timeCreated: 1485786815
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/packs/StylizedProjectilePack1/prefabs/Bullet/Bullet_SilverFlare/Bullet_Small_SilverFlare/Bullet_SilverFlare_Small_Projectile.prefab
+  uploadId: 414036

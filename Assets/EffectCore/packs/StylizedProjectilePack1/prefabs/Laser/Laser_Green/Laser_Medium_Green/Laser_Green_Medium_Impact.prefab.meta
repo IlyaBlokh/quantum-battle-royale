@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 51ddf308915f04d4e9d2ac79df29d09a
+labels:
+- Effect
+timeCreated: 1485871689
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/packs/StylizedProjectilePack1/prefabs/Laser/Laser_Green/Laser_Medium_Green/Laser_Green_Medium_Impact.prefab
+  uploadId: 414036

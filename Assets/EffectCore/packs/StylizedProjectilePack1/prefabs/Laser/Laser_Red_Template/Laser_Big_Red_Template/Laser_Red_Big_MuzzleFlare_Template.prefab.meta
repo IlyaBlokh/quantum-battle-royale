@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: a6d535516e8b64b4eb8f8a42ce9b5c2c
+labels:
+- Effect
+timeCreated: 1478716713
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/packs/StylizedProjectilePack1/prefabs/Laser/Laser_Red_Template/Laser_Big_Red_Template/Laser_Red_Big_MuzzleFlare_Template.prefab
+  uploadId: 414036

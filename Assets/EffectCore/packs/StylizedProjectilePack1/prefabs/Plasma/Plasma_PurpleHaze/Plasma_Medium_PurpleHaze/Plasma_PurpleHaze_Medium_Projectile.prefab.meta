@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 44b0798f8b718d8438a4e83ab28d42a2
+labels:
+- Effect
+timeCreated: 1485786815
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/packs/StylizedProjectilePack1/prefabs/Plasma/Plasma_PurpleHaze/Plasma_Medium_PurpleHaze/Plasma_PurpleHaze_Medium_Projectile.prefab
+  uploadId: 414036

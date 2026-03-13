@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5761576d2d8b55549bb01953b3d2a60c
+timeCreated: 1488405478
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/materials/generic/default_additive.mat
+  uploadId: 414036

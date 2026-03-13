@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 188c00203ec6f7f47bb714a7a7a875af
+labels:
+- Effect
+timeCreated: 1486217662
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/packs/StylizedProjectilePack1/prefabs/Laser/Laser_Orange/Laser_Medium_Orange/Laser_Orange_Medium_Projectile.prefab
+  uploadId: 414036

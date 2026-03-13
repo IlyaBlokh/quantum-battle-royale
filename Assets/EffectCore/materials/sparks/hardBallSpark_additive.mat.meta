@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cfce2ba41fb548f46ba530ab1d8e11b2
+timeCreated: 1478435619
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/materials/sparks/hardBallSpark_additive.mat
+  uploadId: 414036

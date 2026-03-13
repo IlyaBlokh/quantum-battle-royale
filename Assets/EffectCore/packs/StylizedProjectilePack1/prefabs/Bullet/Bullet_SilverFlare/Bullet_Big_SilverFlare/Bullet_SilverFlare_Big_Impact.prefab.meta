@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: da7d34a7c7418a443a7fbe3a4f432cba
+timeCreated: 1485871689
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/packs/StylizedProjectilePack1/prefabs/Bullet/Bullet_SilverFlare/Bullet_Big_SilverFlare/Bullet_SilverFlare_Big_Impact.prefab
+  uploadId: 414036

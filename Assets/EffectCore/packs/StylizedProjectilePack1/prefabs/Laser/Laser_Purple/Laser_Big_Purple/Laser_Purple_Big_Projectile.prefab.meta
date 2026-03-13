@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: b20aa33fbcc0f9341bafbb0b018927eb
+labels:
+- Effect
+timeCreated: 1486217662
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/packs/StylizedProjectilePack1/prefabs/Laser/Laser_Purple/Laser_Big_Purple/Laser_Purple_Big_Projectile.prefab
+  uploadId: 414036

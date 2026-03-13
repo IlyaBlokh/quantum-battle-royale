@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: c33493550f19f7c46b567bbdd9e72038
+labels:
+- Effect
+timeCreated: 1478716713
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/packs/StylizedProjectilePack1/prefabs/Laser/Laser_Green/Laser_Small_Green/Laser_Green_Small_MuzzleFlare.prefab
+  uploadId: 414036

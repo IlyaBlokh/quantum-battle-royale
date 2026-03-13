@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 06226cec84efcd7458575819ef0b5733
+labels:
+- Effect
+timeCreated: 1486217662
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/packs/StylizedProjectilePack1/prefabs/Laser/Laser_Red_Template/Laser_Big_Red_Template/Laser_Red_Big_Projectile_Template.prefab
+  uploadId: 414036

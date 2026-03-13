@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7c125a213985abc4aac162ec448f5e0d
+timeCreated: 1486228038
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/packs/StylizedProjectilePack1/prefabs/Bullet/shells/shotgunShell_rigidBody.prefab
+  uploadId: 414036

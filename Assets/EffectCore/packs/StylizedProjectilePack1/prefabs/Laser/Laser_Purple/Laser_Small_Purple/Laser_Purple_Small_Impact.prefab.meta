@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: a05adddee0ded3f439cf297977aaeaa7
+labels:
+- Effect
+timeCreated: 1485871689
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/packs/StylizedProjectilePack1/prefabs/Laser/Laser_Purple/Laser_Small_Purple/Laser_Purple_Small_Impact.prefab
+  uploadId: 414036

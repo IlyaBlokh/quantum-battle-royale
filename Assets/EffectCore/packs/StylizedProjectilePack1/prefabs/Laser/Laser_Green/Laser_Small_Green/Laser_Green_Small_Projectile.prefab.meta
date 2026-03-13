@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: da569c0f83ca4b648aec954193d757e5
+labels:
+- Effect
+timeCreated: 1486217662
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/packs/StylizedProjectilePack1/prefabs/Laser/Laser_Green/Laser_Small_Green/Laser_Green_Small_Projectile.prefab
+  uploadId: 414036

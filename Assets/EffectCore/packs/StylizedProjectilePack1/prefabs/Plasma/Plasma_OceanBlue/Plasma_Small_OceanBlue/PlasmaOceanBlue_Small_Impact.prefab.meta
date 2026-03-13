@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 5301e53676983a24b81ac07500d60ae5
+labels:
+- Effect
+timeCreated: 1485871689
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/packs/StylizedProjectilePack1/prefabs/Plasma/Plasma_OceanBlue/Plasma_Small_OceanBlue/PlasmaOceanBlue_Small_Impact.prefab
+  uploadId: 414036

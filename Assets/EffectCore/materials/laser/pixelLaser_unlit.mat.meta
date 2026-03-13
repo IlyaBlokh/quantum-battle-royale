@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 41833273f32b10d47b2e6ec751448a6a
+timeCreated: 1478435619
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/materials/laser/pixelLaser_unlit.mat
+  uploadId: 414036

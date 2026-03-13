@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 1b81ed6643072854688c442ec72032d6
+labels:
+- Effect
+timeCreated: 1486217662
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/packs/StylizedProjectilePack1/prefabs/Laser/Laser_Blue/Laser_Small_Blue/Laser_Blue_Small_Projectile.prefab
+  uploadId: 414036

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2b41a6b2321212546adc388c7a4ad000
+timeCreated: 1485876400
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/packs/WebDemoAssets/animators/recoil_ac.controller
+  uploadId: 414036

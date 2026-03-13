@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 581d5d8274d685543ab36b8fe76a6c2e
+timeCreated: 1478716713
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/packs/StylizedProjectilePack1/prefabs/Bullet/Bullet_VenomGreen/Bullet_Small_VenomGreen/Bullet_VenomGreen_Small_MuzzleFlare.prefab
+  uploadId: 414036

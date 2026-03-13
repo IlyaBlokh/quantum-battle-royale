@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7bef351ddc33ae044b671a7664396a20
+timeCreated: 1485871689
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/packs/StylizedProjectilePack1/prefabs/Bullet/Bullet_GoldFire_Template/Bullet_Small_Goldfire_Template/Bullet_GoldFire_Small_Impact_Template.prefab
+  uploadId: 414036

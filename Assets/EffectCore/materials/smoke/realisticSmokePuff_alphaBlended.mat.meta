@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d8620aea19e11694bac16fd533070902
+timeCreated: 1478434455
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/materials/smoke/realisticSmokePuff_alphaBlended.mat
+  uploadId: 414036

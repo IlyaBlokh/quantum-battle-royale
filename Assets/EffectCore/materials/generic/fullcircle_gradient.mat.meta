@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bf20ca5bee7976b4780d4d6dde41964b
+timeCreated: 1488405478
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/materials/generic/fullcircle_gradient.mat
+  uploadId: 414036

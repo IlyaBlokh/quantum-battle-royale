@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 7b4b488721e2ac54a873cf71cd131a14
+labels:
+- Effect
+timeCreated: 1485786815
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/packs/StylizedProjectilePack1/prefabs/Plasma/Plasma_OceanBlue/Plasma_Medium_OceanBlue/PlasmaOceanBlue_Medium_Projectile.prefab
+  uploadId: 414036

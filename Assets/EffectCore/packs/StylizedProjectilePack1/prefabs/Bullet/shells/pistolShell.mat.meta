@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 91f1d24d4b2337d47be9dbc1c8c878d3
+timeCreated: 1486227992
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/packs/StylizedProjectilePack1/prefabs/Bullet/shells/pistolShell.mat
+  uploadId: 414036

@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 0d589ddd2ed60394784c5add357069fa
+labels:
+- Effect
+timeCreated: 1485786815
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/packs/StylizedProjectilePack1/prefabs/Plasma/Plasma_PoisonGreen/Plasma_Big_PoisonGreen/Plasma_PoisonGreen_Big_Projectile.prefab
+  uploadId: 414036

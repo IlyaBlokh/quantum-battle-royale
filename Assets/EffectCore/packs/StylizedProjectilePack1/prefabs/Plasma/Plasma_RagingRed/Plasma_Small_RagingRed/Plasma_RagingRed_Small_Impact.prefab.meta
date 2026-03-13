@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: b2123df6038fb164faef17d57b22aab8
+labels:
+- Effect
+timeCreated: 1485871689
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/packs/StylizedProjectilePack1/prefabs/Plasma/Plasma_RagingRed/Plasma_Small_RagingRed/Plasma_RagingRed_Small_Impact.prefab
+  uploadId: 414036

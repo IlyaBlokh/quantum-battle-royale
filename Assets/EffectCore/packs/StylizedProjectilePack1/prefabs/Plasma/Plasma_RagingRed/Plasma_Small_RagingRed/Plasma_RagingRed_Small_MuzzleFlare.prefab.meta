@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 6a0a0f7a97e0e7747accda091cb14743
+labels:
+- Effect
+timeCreated: 1478716713
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/packs/StylizedProjectilePack1/prefabs/Plasma/Plasma_RagingRed/Plasma_Small_RagingRed/Plasma_RagingRed_Small_MuzzleFlare.prefab
+  uploadId: 414036

@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 5e486dbaa8aaffb458af02f5b8d83621
+labels:
+- Effect
+timeCreated: 1486217662
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/packs/StylizedProjectilePack1/prefabs/Laser/Laser_Red/Laser_Medium_Red/Laser_Red_Medium_Projectile.prefab
+  uploadId: 414036

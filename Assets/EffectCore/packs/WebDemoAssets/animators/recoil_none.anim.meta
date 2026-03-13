@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ceae37b42d5459741b58e7b77d0561e2
+timeCreated: 1485877146
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/packs/WebDemoAssets/animators/recoil_none.anim
+  uploadId: 414036

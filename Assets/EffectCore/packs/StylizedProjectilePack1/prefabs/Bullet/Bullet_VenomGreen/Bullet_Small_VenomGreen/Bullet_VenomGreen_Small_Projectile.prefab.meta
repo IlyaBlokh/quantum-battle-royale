@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: f28a900373870dd46b5aa1352c03c233
+labels:
+- Effect
+timeCreated: 1485786815
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/packs/StylizedProjectilePack1/prefabs/Bullet/Bullet_VenomGreen/Bullet_Small_VenomGreen/Bullet_VenomGreen_Small_Projectile.prefab
+  uploadId: 414036

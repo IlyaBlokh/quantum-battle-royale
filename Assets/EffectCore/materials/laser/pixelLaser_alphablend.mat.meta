@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5443f785d54fccc40bcfb484c85d5c77
+timeCreated: 1478435619
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106979
+  packageName: Stylized Projectile Pack 1
+  packageVersion: 1.62
+  assetPath: Assets/EffectCore/materials/laser/pixelLaser_alphablend.mat
+  uploadId: 414036
