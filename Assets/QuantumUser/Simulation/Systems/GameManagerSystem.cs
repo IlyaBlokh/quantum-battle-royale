@@ -22,6 +22,13 @@ namespace Quantum.QuantumUser.Simulation.Systems
                     return;
             }
             
+            GameManagerConfig config = f.FindAsset(gameManager->GameManagerConfig);
+            if (config.EnableSandbox)
+            { 
+                gameManager->CurrentGameState = GameState.Playing;
+                return;
+            }
+            
             gameManager->CurrentGameState = f.ComponentCount<PlayerLink>() > 1
                 ? GameState.Playing 
                 : GameState.GameOver;

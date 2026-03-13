@@ -10,6 +10,7 @@ namespace Quantum
         public Sprite WeaponSprite;
         public FP Cooldown;
         public FPVector3 Offset;
+        public FP CameraYOffset;
         
         public virtual void OnInit(Frame f, EntityRef entity, Weapon* weapon) { }
 

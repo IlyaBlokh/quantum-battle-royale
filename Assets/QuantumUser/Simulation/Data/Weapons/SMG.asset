@@ -27,6 +27,8 @@ MonoBehaviour:
       RawValue: 98304
     Z:
       RawValue: 117965
+  CameraYOffset:
+    RawValue: 786432
   Bullet: {fileID: 11400000, guid: aa8fd4b1cad238442a3cf4a931a5dd70, type: 2}
   MaxAmmo: 20
   BulletsPerClick: 3
