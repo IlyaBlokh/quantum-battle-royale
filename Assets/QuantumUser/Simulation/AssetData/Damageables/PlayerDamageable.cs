@@ -15,7 +15,7 @@ namespace Quantum
         DropLoop(f, target);
         f.Signals.DamageableDestroyed(target);
         f.Destroy(target);
-        f.Signals.PLayerKilled();
+        f.Signals.PlayerKilled();
         return;
       }
       f.Events.OnHealthUpdate(target, MaxHealth, damageable->Health);

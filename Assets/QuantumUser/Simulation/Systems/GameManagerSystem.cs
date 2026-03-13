@@ -4,7 +4,7 @@ using UnityEngine.Scripting;
 namespace Quantum.QuantumUser.Simulation.Systems
 {
     [Preserve]
-    public unsafe class GameManagerSystem : SystemMainThread, ISignalOnComponentAdded<GameManager>, ISignalPLayerKilled, ISignalOnPlayerDisconnected
+    public unsafe class GameManagerSystem : SystemMainThread, ISignalOnComponentAdded<GameManager>, ISignalPlayerKilled, ISignalOnPlayerDisconnected
     {
         public void OnAdded(Frame f, EntityRef entity, GameManager* gameManager)
         {
@@ -42,7 +42,7 @@ namespace Quantum.QuantumUser.Simulation.Systems
             }
         }
 
-        public void PLayerKilled(Frame f)
+        public void PlayerKilled(Frame f)
         {
             EvaluateGameOverCondition(f);
         }

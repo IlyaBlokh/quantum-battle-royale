@@ -17,5 +17,5 @@ MonoBehaviour:
     Guid:
       Value: 497690870282809896
   TimeToWaitForPlayers:
-    RawValue: 65536
-  EnableSandbox: 1
+    RawValue: 655360
+  EnableSandbox: 0

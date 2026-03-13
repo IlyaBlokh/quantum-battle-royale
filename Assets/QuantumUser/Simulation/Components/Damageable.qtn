@@ -6,7 +6,7 @@ component Damageable{
 signal DamageableHit(EntityRef victim, EntityRef hitter, FP damage, Damageable* damageable);
 signal DamageableHealthRestored(EntityRef entity, Damageable* damageable);
 signal DamageableDestroyed(EntityRef entity);
-signal PLayerKilled();
+signal PlayerKilled();
 
 event OnHealthUpdate{
     EntityRef Target;

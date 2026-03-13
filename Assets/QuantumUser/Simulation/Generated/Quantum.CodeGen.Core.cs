@@ -1171,8 +1171,8 @@ namespace Quantum {
   public unsafe partial interface ISignalDamageableDestroyed : ISignal {
     void DamageableDestroyed(Frame f, EntityRef entity);
   }
-  public unsafe partial interface ISignalPLayerKilled : ISignal {
-    void PLayerKilled(Frame f);
+  public unsafe partial interface ISignalPlayerKilled : ISignal {
+    void PlayerKilled(Frame f);
   }
   public unsafe partial interface ISignalCreateBullet : ISignal {
     void CreateBullet(Frame f, EntityRef owner, FiringWeapon weaponData);
@@ -1183,7 +1183,7 @@ namespace Quantum {
     private ISignalDamageableHit[] _ISignalDamageableHitSystems;
     private ISignalDamageableHealthRestored[] _ISignalDamageableHealthRestoredSystems;
     private ISignalDamageableDestroyed[] _ISignalDamageableDestroyedSystems;
-    private ISignalPLayerKilled[] _ISignalPLayerKilledSystems;
+    private ISignalPlayerKilled[] _ISignalPlayerKilledSystems;
     private ISignalCreateBullet[] _ISignalCreateBulletSystems;
     partial void AllocGen() {
       _globals = (_globals_*)Context.Allocator.AllocAndClear(sizeof(_globals_));
@@ -1199,7 +1199,7 @@ namespace Quantum {
       _ISignalDamageableHitSystems = BuildSignalsArray<ISignalDamageableHit>();
       _ISignalDamageableHealthRestoredSystems = BuildSignalsArray<ISignalDamageableHealthRestored>();
       _ISignalDamageableDestroyedSystems = BuildSignalsArray<ISignalDamageableDestroyed>();
-      _ISignalPLayerKilledSystems = BuildSignalsArray<ISignalPLayerKilled>();
+      _ISignalPlayerKilledSystems = BuildSignalsArray<ISignalPlayerKilled>();
       _ISignalCreateBulletSystems = BuildSignalsArray<ISignalCreateBullet>();
       _ComponentSignalsOnAdded = new ComponentReactiveCallbackInvoker[ComponentTypeId.Type.Length];
       _ComponentSignalsOnRemoved = new ComponentReactiveCallbackInvoker[ComponentTypeId.Type.Length];
@@ -1314,12 +1314,12 @@ namespace Quantum {
           }
         }
       }
-      public void PLayerKilled() {
-        var array = _f._ISignalPLayerKilledSystems;
+      public void PlayerKilled() {
+        var array = _f._ISignalPlayerKilledSystems;
         for (Int32 i = 0; i < array.Length; ++i) {
           var s = array[i];
           if (_f.SystemIsEnabledInHierarchy((SystemBase)s)) {
-            s.PLayerKilled(_f);
+            s.PlayerKilled(_f);
           }
         }
       }
